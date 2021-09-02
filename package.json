@@ -1,21 +1,22 @@
 {
-  "name": "stitches-ci-nextjs",
-  "version": "1.0.0",
+  "name": "portfolio-site",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@stitches/react": "https://pkg.csb.dev/modulz/stitches/commit/70268e00/@stitches/react",
-    "@types/node": "14.0.27",
-    "@types/react": "16.9.46",
-    "next": "latest",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "typescript": "3.9.7"
+    "@modulz/radix-icons": "^4.0.0",
+    "@stitches/react": "^1.0.0",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "license": "ISC",
-  "keywords": [],
-  "description": "Sandbox for Stitches CI"
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
+  }
 }
