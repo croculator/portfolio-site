@@ -21,22 +21,18 @@ const NavElement = styled('navelement', {
 
 const Footer = ({ }) => {
   return (
-    <Box css={{ width: 650, margin: 'auto', position: 'auto', bottom: 0, }}>
+    <Box css={{ maxWidth: 650, margin: '20', position: 'center', bottom: 0, }}>
 
       <Box
       css={{
-        borderTop: "1px solid",
+        boxSizing: 'border-box',
+        justifyContent: 'center',
+        alignItems: 'center',
+        border: "1px solid",
         borderColor: "$gray600",
-        py: "$4",
-        display: "grid",
-        gridTemplateColumns: "repeat(1, minmax(0, 1fr))",
-        marginTop: 50,
-        margin: "50 auto",
-        fontSize: "$1",
-        px: "$4",
-        "@bp2": {
-          gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-        },
+        maxWidth: '100%',
+        marginTop: 40,
+
       }}
     />
 
@@ -45,11 +41,6 @@ const Footer = ({ }) => {
         <Link href="/about"><NavElement>About</NavElement></Link>
         <Link href="/work"><NavElement>Work</NavElement></Link>
       </Box>
-
-
-
-
-
     </Box>
   );
 };

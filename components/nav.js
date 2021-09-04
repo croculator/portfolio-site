@@ -11,7 +11,7 @@ import { styled } from '../stitches.config.ts';
     padding: '$2 $3',
     border: '2px solid $turq',
     color: '$gray100',
-    fontWeight: 500,
+    fontWeight: 400,
 
     '&:hover': {
       backgroundColor: '$turq',
@@ -25,18 +25,24 @@ const Nav = ({ }) => {
     <>
         <Box css={{
             overflow: 'hidden',
-            backgroundColor: '$gray500',
+            backgroundColor: 'hsla(0, 0%, 100%, 0.98)',
+            // backgroundColor: 'hsla(47, 19%, 91%, 0.95)',
             position: 'fixed',
             top: 0,
             width: '100%',
-            height: 60,
+            height: 80,
             display: 'flex',
-            justifyContent: 'flex-end',
+            flexDirection: 'row',
+            justifyContent: 'flex-start',
 
 
         }}>
 
-        <Box css={{ margin: 10, width: 500, boxSizing: 'border-box', display: 'flex', justifyContent: 'flex-end',}}>
+        <Box css={{ margin: 30, width: '100%', justifyContent: 'flex-start'}}>
+            <Link href="/home"><NavElement css={{ fontWeight: 600,}}>Michael Diaz</NavElement></Link>
+        </Box>
+
+        <Box css={{ margin: 30, justifyContent: 'flex-end'}}>
             <Link href="/home"><NavElement>Home</NavElement></Link>
             <Link href="/work"><NavElement>Work</NavElement></Link>
             <Link href="/about"><NavElement>About</NavElement></Link>

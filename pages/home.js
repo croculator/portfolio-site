@@ -5,13 +5,21 @@ import Box from "../components/box";
 const Home = () => {
     return (
         <Layout pageTitle="home">
-            <Box css={{ fontSize: '$9'}}>
-                Hello Traveler,
+            <Box css={{ fontSize: 86, fontWeight: 700,  maxWidth: 850,}}>Knock,</Box>
+            <Box css={{ fontSize: 86, fontWeight: 700,  maxWidth: 850,}}>Knock,</Box>
+
+            <Box css={{fontSize: '$5', marginTop: '$3', fontWeight: 300,}}>
+               We live in interesting times, where the reality is meeting the fantasy. 
+                Every day it is easier to build what we dream.  The craft of creating is ever more
+                important. Our words; king, the symbols we craft spread in a instant, the tools we harness are
+                indispensable
+
+               
+               Every day it is easier to build what we dream. So I ask, build what you dream and dream big.
             </Box>
 
-            <Box css={{fontSize: '$5', marginTop: '$3'}}>
-                My name is Michael Diaz, and you found one of many resting spots in this 
-vast internet.  While you are here have a look around  
+            <Box css={{fontSize: '$5', marginTop: '$3', fontWeight: 300,}}>
+                Hello! My name is michael diaz I am developer, designer, & artist. 
             </Box>
         </Layout>
     )
