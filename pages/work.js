@@ -12,6 +12,8 @@ import nomadGreensPhoto02 from '../public/images/nomadGreens_photo02.jpg'
 import Link from "next/link";
 import Nav from "../components/nav"
 import Footer from "../components/footer";
+import Timeline from '../components/timeline';
+import { UnderlineIcon, ArrowRightIcon } from '@modulz/radix-icons';
 
 const Work = () => {
     return (
@@ -21,13 +23,62 @@ const Work = () => {
                 marginTop: 100,
                 padding: 100
             }}>
-            <Box css={{ fontSize: '$9', fontWeight: 600,}}>Work</Box>
+            <title>Work | Michael Diaz</title>
+
+
+            <Box css={{
+                boxSizing: 'border-box',
+                justifyContent: 'center',
+                alignItems: 'center',
+                maxWidth: 600,
+                padding: 20,
+                margin: 'auto',
+                marginBottom: 10,
+            }}>
+                <Box>
+                Hi! Michael Diaz here, im a product designer, programmer, & visual artist. 
+
+                Lets build something delightful together!
+
+                </Box>
+            </Box>
+
+            <Box css={{
+                boxSizing: 'border-box',
+                justifyContent: 'center',
+                alignItems: 'center',
+                maxWidth: 600,
+                padding: 20,
+                margin: 'auto',
+                marginBottom: 100,
+            }}>
+            <Box 
+                as="a" 
+                href="https://github.com/mike0x10"
+                css={{  borderRadius: 15, textDecoration: 'underline'}}
+                ><ArrowRightIcon/> Github</Box>
+
+            </Box>
+
+
+            
+
+
+
+            <Timeline/>
+
+
+
+
             <Box css={{ padding: 30}}></Box>
                 {/* berfix */}
 
                 <Box css={{ fontSize: '$8', fontWeight: 600,}}>Berbix Landing Redesign</Box> 
                 <Box css={{fontSize: '$5', marginTop: '$3', fontWeight: 300, width: 500}}>
-                    Berbix is a Startup that is focusing on verifiying users  
+                    Berbix is a Startup that is focusing on verifiying users for sensitive products for 
+                    other comapnies by providing an API to intergrate into their tech stack.
+
+
                 </Box>
 
                 <Box css={{ padding: 10}}></Box>
@@ -41,8 +92,9 @@ const Work = () => {
                 {/* Nomad Greens Quarterly Report */}
 
                 <Box css={{ fontSize: '$8', fontWeight: 600,}}>Nomad Greens Annual Report</Box> 
-                <Box css={{fontSize: '$5', marginTop: '$3', fontWeight: 300,}}>
-                    Berbix is a Startup that is focusing on verifiying users  
+                <Box css={{fontSize: '$5', marginTop: '$3', fontWeight: 300, width: 500}}>
+                    Nomad Greens is a tech startup focusing on growing the most nutritious food that is 
+                    affordable and can grow in any climate or enviroment.  
                 </Box>
 
                 <Image 

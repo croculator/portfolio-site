@@ -36,6 +36,8 @@ export const {
       green: "#26B38D",
       highlighter: "#E6A6BE",
       red: "#FF4343",
+      beige: "#FAFAFA",
+      darkBeige: "#EEE8DF",
 
       hiContrast: "hsl(206,10%,5%)",
       loContrast: "white",
