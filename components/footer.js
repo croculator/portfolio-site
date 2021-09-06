@@ -3,6 +3,7 @@ import { TwitterLogoIcon, GitHubLogoIcon } from "@modulz/radix-icons";
 import Link from "next/link";
 import { ReaderIcon } from "@modulz/radix-icons";
 import { styled } from '../stitches.config.ts';
+import { ArrowTopRightIcon,  } from "@modulz/radix-icons";
 
 const NavElement = styled('navelement', {
   display: 'block',
@@ -23,7 +24,7 @@ const Footer = ({ }) => {
   return (
     <Box css={{ maxWidth: 650, margin: '20', position: 'center', bottom: 0, }}>
 
-      <Box
+      {/* <Box
       css={{
         boxSizing: 'border-box',
         justifyContent: 'center',
@@ -40,7 +41,13 @@ const Footer = ({ }) => {
         <Link href="/home"><NavElement>Home</NavElement></Link>
         <Link href="/about"><NavElement>About</NavElement></Link>
         <Link href="/work"><NavElement>Work</NavElement></Link>
-      </Box>
+      </Box> */}
+
+
+
+
+
+
     </Box>
   );
 };

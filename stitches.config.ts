@@ -75,9 +75,14 @@ export const {
       7: "28px",
       8: "35px",
       9: "44px",
+      10: "55px",
+      11: "69px",
     },
     fonts: {
-      system: "system-ui"
+      system: "system-ui",
+      sans: "Inter, sans-serif",
+      mono: "Fira Mono, monospace",
+      inconsolata: "Inconsolata, monospace"
     }
   },
   media: {
@@ -112,3 +117,32 @@ export const {
     })
   }
 });
+
+export const lightTheme = {
+  blur: "rgba(255, 255, 255, 0.5)",
+  border: "#E0E0E0",
+  gray100: "#F5F5F5",
+  gray200: "#EEEEEE",
+  gray300: "#E0E0E0",
+  gray400: "#BDBDBD",
+  gray50: "#FAFAFA",
+  gray500: "#9E9E9E",
+  gray600: "#757575",
+  gray700: "#616161",
+  gray800: "#424242",
+  gray900: "#212121",
+  hiContrast: "#000000",
+  loContrast: "#ffffff",
+  table: "#FCFCFC",
+};
+
+const media = {
+  bp1: `(min-width: 520px)`,
+  bp2: `(min-width: 900px)`,
+  bp3: `(min-width: 1200px)`,
+  bp4: `(min-width: 1580px)`,
+  motion: `(prefers-reduced-motion)`,
+  hover: `(hover: hover)`,
+  dark: `(prefers-color-scheme: dark)`,
+  light: `(prefers-color-scheme: light)`,
+};

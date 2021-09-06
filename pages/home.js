@@ -24,15 +24,7 @@ const Home = () => {
                 Hello! My name is michael diaz I am developer, designer, & artist. 
             </Box>
 
-        <Box as='table' css={{ border: 'solid black 1'}}>
-            <tr>
-                <th>
-                    <Box css={{ border: 1, borderColor: 'black'}}>
-                    ETHEREUM ADDRESS <ArrowTopRightIcon/>
-                    </Box>
-                </th>
-            </tr>
-        </Box>
+
 
         </Layout>
     )

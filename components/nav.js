@@ -3,6 +3,7 @@ import { TwitterLogoIcon, GitHubLogoIcon } from "@modulz/radix-icons";
 import Link from "next/link";
 import { ReaderIcon } from "@modulz/radix-icons";
 import { styled } from '../stitches.config.ts';
+import ThemeToggle from "./themeToggle";
 
 
  const NavElement = styled('navelement', {
@@ -34,18 +35,18 @@ const Nav = ({ }) => {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-start',
-
-
         }}>
 
         <Box css={{ margin: 30, width: '100%', justifyContent: 'flex-start'}}>
-            <Link href="/home"><NavElement css={{ fontWeight: 600,}}>Michael Diaz</NavElement></Link>
+            <Link href="/"><NavElement css={{ fontWeight: 600,}}>Michael Diaz</NavElement></Link>
+
         </Box>
 
         <Box css={{ margin: 30, justifyContent: 'flex-end'}}>
-            <Link href="/home"><NavElement>Home</NavElement></Link>
+            <Link href="/"><NavElement>Home</NavElement></Link>
             <Link href="/work"><NavElement>Work</NavElement></Link>
-            <Link href="/about"><NavElement>About</NavElement></Link>
+            <NavElement>  <ThemeToggle /></NavElement>
+
         </Box>
 
         </Box>
