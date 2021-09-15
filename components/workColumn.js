@@ -16,9 +16,10 @@ const NavElement = styled('navelement', {
     },
   });
 
-const WorkColumn = ({ number, title, description }) => {
+const WorkColumn = ({ number, title, description, url }) => {
   return (
     <>
+    <Link href={url} passHref>
     <Box css={{ display:'flex', justifyContent: 'flexStart', flexDirection: 'row',  paddingTop: 30, paddingBottom: 30, '&:hover': {backgroundColor: '$beige'},}}>
         <Box css={{ flex: 'none', paddingRight: 0, width: '40%'}}>
             <Link href="/home"><NavElement css={{ fontWeight: 300, }}>{number}</NavElement></Link>
@@ -28,6 +29,7 @@ const WorkColumn = ({ number, title, description }) => {
         <NavElement css={{ fontWeight: 400, paddingLeft: 0,}}>{description}</NavElement>
         </Box>
     </Box>
+    </Link>
     </>
   );
 };

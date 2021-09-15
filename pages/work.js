@@ -9,6 +9,22 @@ import greenscreen from '../public/images/greenscreen.gif'
 import nomadGreensReport from '../public/images/nomadGreens_report.png'
 import nomadGreensPhoto01 from '../public/images/nomadGreens_photo01.jpg'
 import nomadGreensPhoto02 from '../public/images/nomadGreens_photo02.jpg'
+
+import blizzard01 from '../public/images/blizzard01.png'
+import blizzard02 from '../public/images/blizzard02.png'
+import blizzard03 from '../public/images/blizzard03.png'
+import blizzardgif from '../public/images/blizzard.gif'
+
+
+import bellator01 from '../public/images/bellator01.jpg'
+
+import hungerGamesMicrosoft01 from '../public/images/hungerGamesMicrosoft.gif'
+
+import aliceInChains01 from '../public/images/aliceInChains.gif'
+
+
+
+
 import Link from "next/link";
 import Nav from "../components/nav"
 import Footer from "../components/footer";
@@ -21,9 +37,10 @@ const Work = () => {
             <Box css={{
                 width: '100%' ,
                 marginTop: 100,
-                padding: 100
+                padding: 100,
+                fontFamily: '$inconsolata'
             }}>
-            <title>Work | Michael Diaz</title>
+            <title >Work | Michael Diaz</title>
 
 
             <Box css={{
@@ -59,6 +76,82 @@ const Work = () => {
                 ><ArrowRightIcon/> Github</Box>
 
             </Box>
+
+            {/* Row */}
+            <Box css={{
+                display: "flex",
+                flexWrap: "wrap",
+            }}>
+
+            {/* Column */}
+                <Box css={{
+                    'initial': {
+                    flex: "100%",
+                    maxWidth: "100%",
+                    },
+
+                    'bp1': {
+                        flex: "50%",
+                        maxWidth: "50%",
+                    },
+
+                    // '@bp2': {
+                    //     flex: "100%",
+                    //     maxWidth: "100%",
+                    // },
+                }}>
+                    <Box css={{ }}>
+                        {/* Bellator */}
+                        <Image 
+                            src={blizzardgif} 
+                            alt="mobile comp"
+                            objectFit='cover'
+                            width={400}
+                            height={400}
+                            />
+                        </Box>
+
+                        <Box as="div">
+                        {/* Nomad */}
+                        <Image 
+                            src={bellator01} 
+                            alt="mobile comp"
+                            objectFit='cover'
+                            width={400}
+                            height={400}
+                            />
+                        </Box>
+
+                        <Box as="div">
+                        {/* CAAR */}
+                        <Image 
+                            src={hungerGamesMicrosoft01} 
+                            alt="mobile comp"
+                            objectFit='cover'
+                            width={400}
+                            height={400}
+                            />
+                        </Box>
+
+                        <Box as="div">
+                        {/* CAAR */}
+                        <Image 
+                            src={aliceInChains01} 
+                            alt="mobile comp"
+                            objectFit='cover'
+                            width={400}
+                            height={400}
+                            />
+                    </Box>
+                </Box>
+                    
+
+                
+
+            </Box>
+
+
+
 
 
             

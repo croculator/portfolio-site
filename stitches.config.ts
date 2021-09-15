@@ -82,7 +82,8 @@ export const {
       system: "system-ui",
       sans: "Inter, sans-serif",
       mono: "Fira Mono, monospace",
-      inconsolata: "Inconsolata, monospace"
+      inconsolata: "Inconsolata, monospace",
+      telegraf: "telegraf"
     }
   },
   media: {
