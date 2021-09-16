@@ -38,6 +38,7 @@ export const {
       red: "#FF4343",
       beige: "#FAFAFA",
       darkBeige: "#EEE8DF",
+      orange: "#FF4F00",
 
       hiContrast: "hsl(206,10%,5%)",
       loContrast: "white",

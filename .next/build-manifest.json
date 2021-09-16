@@ -28,6 +28,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/work.js"
+    ],
+    "/work/blizzard": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/work/blizzard.js"
     ]
   },
   "ampFirstPages": []

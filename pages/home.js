@@ -1,7 +1,6 @@
 import * as React from 'react'
-import Layout from "../components/layout";
-import Box from "../components/box";
-import { ArrowTopRightIcon,  } from "@modulz/radix-icons";
+// import Layout from "../../components/layout";
+// import Box from "../../components/box";
 
 
 const Home = () => {

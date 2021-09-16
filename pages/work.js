@@ -1,7 +1,9 @@
 import * as React from 'react'
 import Layout from "../components/layout";
+import { styled } from '../stitches.config.ts';
 import Image from 'next/image'
 import Box from "../components/box";
+import ProjectCard from "../components/projectCard";
 import milebot01 from '../public/images/mileBotComp01.png'
 import berbix from '../public/images/berbix_comp03.png'
 import greenscreen from '../public/images/greenscreen.gif'
@@ -31,6 +33,19 @@ import Footer from "../components/footer";
 import Timeline from '../components/timeline';
 import { UnderlineIcon, ArrowRightIcon } from '@modulz/radix-icons';
 
+
+
+
+const GridMosaic = styled('gridmosaic', {
+    display: "grid",
+    gap: "1rem",
+    gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
+    gridAutoRows: "auto",
+  })
+  
+
+
+
 const Work = () => {
     return (
         <>
@@ -38,28 +53,21 @@ const Work = () => {
                 width: '100%' ,
                 marginTop: 100,
                 padding: 100,
-                fontFamily: '$inconsolata'
+                fontFamily: '$system'
             }}>
             <title >Work | Michael Diaz</title>
 
-
-            <Box css={{
-                boxSizing: 'border-box',
-                justifyContent: 'center',
-                alignItems: 'center',
-                maxWidth: 600,
-                padding: 20,
-                margin: 'auto',
-                marginBottom: 10,
-            }}>
-                <Box>
-                Hi! Michael Diaz here, im a product designer, programmer, & visual artist. 
-
+            {/* Heading summary */}
+            <Box css={{  fontFamily: '$inconsolata', maxWidth: 1200 }}>
+                <Box as="div" css={{ fontSize: "$9", display: "inline-block",}}>Hi! </Box>
+                <Box as="mark" css={{  color: "orange", backgroundColor: "transparent", fontSize: "$9", display: "inline-block", paddingLeft: 10, paddingRight: 10}}> Michael Diaz  </Box>
+                <Box css={{ fontSize: "$9",display: "inline", }}>
+                 here,im a product designer, programmer, & visual artist. 
                 Lets build something delightful together!
-
                 </Box>
             </Box>
 
+            {/* Github */}
             <Box css={{
                 boxSizing: 'border-box',
                 justifyContent: 'center',
@@ -74,93 +82,26 @@ const Work = () => {
                 href="https://github.com/mike0x10"
                 css={{  borderRadius: 15, textDecoration: 'underline'}}
                 ><ArrowRightIcon/> Github</Box>
-
             </Box>
 
+            {/* Portfolio grid */}
+            <Box css={{ fontSize: '$7', fontWeight: 600, paddingBottom: 50}}>Professional Work</Box>
             {/* Row */}
-            <Box css={{
-                display: "flex",
-                flexWrap: "wrap",
-            }}>
-
+            <GridMosaic>
             {/* Column */}
-                <Box css={{
-                    'initial': {
-                    flex: "100%",
-                    maxWidth: "100%",
-                    },
 
-                    'bp1': {
-                        flex: "50%",
-                        maxWidth: "50%",
-                    },
+                <ProjectCard imgSrc={blizzardgif} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Blizzard Entertainment" url="work/blizzard"/>
 
-                    // '@bp2': {
-                    //     flex: "100%",
-                    //     maxWidth: "100%",
-                    // },
-                }}>
-                    <Box css={{ }}>
-                        {/* Bellator */}
-                        <Image 
-                            src={blizzardgif} 
-                            alt="mobile comp"
-                            objectFit='cover'
-                            width={400}
-                            height={400}
-                            />
-                        </Box>
+                <ProjectCard imgSrc={bellator01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Bellator MMA" url="work/blizzard"/>
 
-                        <Box as="div">
-                        {/* Nomad */}
-                        <Image 
-                            src={bellator01} 
-                            alt="mobile comp"
-                            objectFit='cover'
-                            width={400}
-                            height={400}
-                            />
-                        </Box>
+                <ProjectCard imgSrc={hungerGamesMicrosoft01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Microsoft Hunger Games" url="work/blizzard"/>
 
-                        <Box as="div">
-                        {/* CAAR */}
-                        <Image 
-                            src={hungerGamesMicrosoft01} 
-                            alt="mobile comp"
-                            objectFit='cover'
-                            width={400}
-                            height={400}
-                            />
-                        </Box>
+                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Nomad Greens" url="work/blizzard"/>
 
-                        <Box as="div">
-                        {/* CAAR */}
-                        <Image 
-                            src={aliceInChains01} 
-                            alt="mobile comp"
-                            objectFit='cover'
-                            width={400}
-                            height={400}
-                            />
-                    </Box>
-                </Box>
-                    
-
-                
-
-            </Box>
+            </GridMosaic>
 
 
-
-
-
-            
-
-
-
-            <Timeline/>
-
-
+            {/* <Timeline/> */}
 
 
             <Box css={{ padding: 30}}></Box>
