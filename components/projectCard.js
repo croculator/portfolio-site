@@ -64,7 +64,7 @@ const TextOverlay = styled('textoverlay', {
 
 
 
-const ProjectCard = ({ imgSrc, imgAlt, imgWidth, imgHeight, title, url}) => {
+const ProjectCard = ({ imgSrc, imgAlt, imgWidth, imgHeight, title, position, url}) => {
 
     return(
 
@@ -79,7 +79,8 @@ const ProjectCard = ({ imgSrc, imgAlt, imgWidth, imgHeight, title, url}) => {
                     width={imgWidth}
                     height={imgHeight}
                     />
-                    <TextOverlay> {title}</TextOverlay>
+                    <TextOverlay> {title}<Box css={{ fontSize: "$5"}}>{position}</Box></TextOverlay>
+
                     <Summary></Summary>
             </Card>
         </Link>

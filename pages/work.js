@@ -102,17 +102,17 @@ const Work = () => {
             {/* Row */}
             <GridMosaic>
             {/* Column */}
-                <ProjectCard imgSrc={blizzardgif} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Blizzard Entertainment" url="work/blizzard"/>
+                <ProjectCard imgSrc={blizzardgif} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Blizzard Entertainment" position="3D Motion Artist II" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={hungerGamesMicrosoft01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Microsoft Hunger Games" url="work/blizzard"/>
+                <ProjectCard imgSrc={hungerGamesMicrosoft01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Microsoft Hunger Games" position="Motion Graphics Artist" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={aliceInChains01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Alice In Chains" url="work/blizzard"/>
+                <ProjectCard imgSrc={aliceInChains01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Alice In Chains" position="Post Production Supervisor" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Pawn Stars" url="work/blizzard"/>
+                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Pawn Stars" position="Compositor" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={clockworkPrincess01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Clockwork Princess" url="work/blizzard"/>
+                <ProjectCard imgSrc={clockworkPrincess01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Clockwork Princess" position="Comp & dynamics artist" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={swiiim01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="SWIIIM" url="work/blizzard"/>
+                <ProjectCard imgSrc={swiiim01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="SWIIIM" position="Comp & dynamics artist" url="work/blizzard"/>
 
             </GridMosaic>
 
@@ -123,13 +123,13 @@ const Work = () => {
             <GridMosaic>
             {/* Column */}
 
-                <ProjectCard imgSrc={bellator01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Bellator MMA" url="work/blizzard"/>
+                <ProjectCard imgSrc={bellator01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Bellator MMA" position="Graphic Designer" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Nomad Greens" url="work/blizzard"/>
+                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Nomad Greens" position="Graphic Designer" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={milebot01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="CAAR app" url="work/blizzard"/>
+                <ProjectCard imgSrc={milebot01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="CAAR app" position="Graphic Designer" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={berbix} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Berbix Landing Redesign" url="work/blizzard"/>
+                <ProjectCard imgSrc={berbix} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Berbix Landing Redesign" position="Graphic Designer" url="work/blizzard"/>
 
             </GridMosaic>
 
