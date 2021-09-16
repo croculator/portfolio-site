@@ -6,7 +6,7 @@ import Box from "../components/box";
 import ProjectCard from "../components/projectCard";
 import milebot01 from '../public/images/mileBotComp01.png'
 import berbix from '../public/images/berbix_comp03.png'
-import greenscreen from '../public/images/greenscreen.gif'
+import clockworkPrincess01 from '../public/images/clockworkPrincess01.gif'
 
 import nomadGreensReport from '../public/images/nomadGreens_report.png'
 import nomadGreensPhoto01 from '../public/images/nomadGreens_photo01.jpg'
@@ -15,14 +15,14 @@ import nomadGreensPhoto02 from '../public/images/nomadGreens_photo02.jpg'
 import blizzard01 from '../public/images/blizzard01.png'
 import blizzard02 from '../public/images/blizzard02.png'
 import blizzard03 from '../public/images/blizzard03.png'
-import blizzardgif from '../public/images/blizzard.gif'
+import blizzardgif from '../public/images/blizzard04.gif'
 
 
 import bellator01 from '../public/images/bellator01.jpg'
 
-import hungerGamesMicrosoft01 from '../public/images/hungerGamesMicrosoft.gif'
+import hungerGamesMicrosoft01 from '../public/images/microsoft01.gif'
 
-import aliceInChains01 from '../public/images/aliceInChains.gif'
+import aliceInChains01 from '../public/images/aliceInChains01.gif'
 
 import swiiim01 from '../public/images/swiiim01.gif'
 
@@ -110,7 +110,7 @@ const Work = () => {
 
                 <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Pawn Stars" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={greenscreen} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Clockwork Princess" url="work/blizzard"/>
+                <ProjectCard imgSrc={clockworkPrincess01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Clockwork Princess" url="work/blizzard"/>
 
                 <ProjectCard imgSrc={swiiim01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="SWIIIM" url="work/blizzard"/>
 
@@ -205,7 +205,7 @@ const Work = () => {
 
 
                 <Image 
-                src={greenscreen} 
+                src={clockworkPrincess01} 
                 alt="mobile comp"
                 loading='lazy'
                 layout='responsive'
