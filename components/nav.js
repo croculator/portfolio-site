@@ -30,24 +30,27 @@ const Nav = ({ }) => {
             // backgroundColor: 'hsla(47, 19%, 91%, 0.95)',
             position: 'fixed',
             top: 0,
-            width: '100%',
+            width: "100%",
             height: 80,
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-start',
+
+            '@bp1': { 
+              // margin: "auto",
+              justifyContent: "center",
+          },
         }}>
 
-        <Box css={{ margin: 30, width: '100%', justifyContent: 'flex-start'}}>
-            <Link href="/"><NavElement css={{ fontWeight: 600,}}>Michael Diaz</NavElement></Link>
+            <Box css={{ margin: 30, width: '100%', justifyContent: 'flex-start',}}>
+                <Link href="/"><NavElement css={{ fontWeight: 600,}}>Michael Diaz</NavElement></Link>
+            </Box>
 
-        </Box>
-
-        <Box css={{ margin: 30, justifyContent: 'flex-end'}}>
-            <Link href="/"><NavElement>Home</NavElement></Link>
-            <Link href="/work"><NavElement>Work</NavElement></Link>
-            {/* <NavElement> <ThemeToggle /></NavElement> */}
-
-        </Box>
+            <Box css={{ margin: 30, justifyContent: 'flex-end',}}>
+                <Link href="/"><NavElement>Home</NavElement></Link>
+                <Link href="/work"><NavElement>Work</NavElement></Link>
+                {/* <NavElement> <ThemeToggle /></NavElement> */}
+            </Box>
 
         </Box>
     </>

@@ -27,14 +27,11 @@ import aliceInChains01 from '../public/images/aliceInChains01.gif'
 import swiiim01 from '../public/images/swiiim01.gif'
 
 
-
-
 import Link from "next/link";
 import Nav from "../components/nav"
 import Footer from "../components/footer";
 import Timeline from '../components/timeline';
 import { UnderlineIcon, ArrowRightIcon } from '@modulz/radix-icons';
-
 
 
 
@@ -44,24 +41,22 @@ const GridMosaic = styled('gridmosaic', {
     gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
     gridAutoRows: "auto",
   })
-  
-
 
 
 const Work = () => {
     return (
         <>
             <Box css={{
-                width: '100%' ,
+
+                maxWidth: 1440,
                 marginTop: 100,
-                padding: 0,
-                marginLeft: 40,
-                marginRight: 40,
-                fontFamily: '$system',
+                // padding: 0,
+                // fontFamily: '$system',
+
                 '@bp1': { 
+                    width: "100%",
                     padding: 100,
-                    marginLeft: 0,
-                    marginRight: 0, 
+                    margin: "auto",
                 },
             }}>
             <title >Work | Michael Diaz</title>
@@ -70,7 +65,12 @@ const Work = () => {
             <Box css={{  
                 fontFamily: '$inconsolata', 
                 maxWidth: "100%", 
-                '@bp1': { maxWidth: "80%"}
+                height: "50vh",
+                paddingLeft: 30,
+                    '@bp1': { 
+                        maxWidth: "80%",
+                        paddingTop: "10vh"
+                    },
                 }}>
                 <Box as="div" css={{ fontSize: "$9", display: "inline-block",}}>Hi! </Box>
                 <Box as="mark" css={{  color: "orange", backgroundColor: "transparent", fontSize: "$9", display: "inline-block", paddingLeft: 10, paddingRight: 10}}> Michael Diaz  </Box>
@@ -98,7 +98,13 @@ const Work = () => {
             </Box>
 
             {/* Portfolio grid */}
-            <Box css={{ fontSize: '$8', fontWeight: 600, paddingBottom: 20}}>3D & Motion Graphics</Box>
+            <Box css={{ fontSize: '$8', fontWeight: 600, paddingBottom: 10, paddingLeft: 20}}>3D & Motion Graphics</Box>
+            <Box css={{ fontSize: '$6', fontWeight: 400, paddingBottom: 20, paddingLeft: 20, width: "100%", '@bp1': {width: "50%"}}}>
+                3D & Motion Graphics is defined by the act of creating assests either 2D stylized assets in illustrator or photoshop,
+                3D from maya or C4D, or photoreal assets from cameras.  Which after you take it into your motion compositing 
+                programing either After effects or Nuke.
+                </Box>
+
             {/* Row */}
             <GridMosaic>
             {/* Column */}

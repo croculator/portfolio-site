@@ -12,9 +12,9 @@ const height= 600;
 
 const Card = styled('div', {
     position: "relative",
-    width: "100%",
-    height: "100%",
-    borderRadius: 10,
+    width: 600,
+    height: 600,
+    borderRadius: 1,
     padding: 0,
     boxSizing: "border-box",
     overflow: "hidden",
@@ -36,8 +36,16 @@ const Card = styled('div', {
     '&:hover': {
         marginTop: -0,
         color: "rgba(0, 0, 0, 0.7)",
+        backgroundColor: "rgba(0, 0, 0, 0.9)",
+
 
       },
+
+      '@bp2': { 
+        width: "100%",
+        height: "100%",
+        padding: 0,
+    },
   });
 
 
