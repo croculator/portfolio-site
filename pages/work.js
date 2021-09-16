@@ -24,6 +24,8 @@ import hungerGamesMicrosoft01 from '../public/images/hungerGamesMicrosoft.gif'
 
 import aliceInChains01 from '../public/images/aliceInChains.gif'
 
+import swiiim01 from '../public/images/swiiim01.gif'
+
 
 
 
@@ -52,13 +54,24 @@ const Work = () => {
             <Box css={{
                 width: '100%' ,
                 marginTop: 100,
-                padding: 100,
-                fontFamily: '$system'
+                padding: 0,
+                marginLeft: 40,
+                marginRight: 40,
+                fontFamily: '$system',
+                '@bp1': { 
+                    padding: 100,
+                    marginLeft: 0,
+                    marginRight: 0, 
+                },
             }}>
             <title >Work | Michael Diaz</title>
 
             {/* Heading summary */}
-            <Box css={{  fontFamily: '$inconsolata', maxWidth: 1200 }}>
+            <Box css={{  
+                fontFamily: '$inconsolata', 
+                maxWidth: "100%", 
+                '@bp1': { maxWidth: "80%"}
+                }}>
                 <Box as="div" css={{ fontSize: "$9", display: "inline-block",}}>Hi! </Box>
                 <Box as="mark" css={{  color: "orange", backgroundColor: "transparent", fontSize: "$9", display: "inline-block", paddingLeft: 10, paddingRight: 10}}> Michael Diaz  </Box>
                 <Box css={{ fontSize: "$9",display: "inline", }}>
@@ -85,18 +98,38 @@ const Work = () => {
             </Box>
 
             {/* Portfolio grid */}
-            <Box css={{ fontSize: '$7', fontWeight: 600, paddingBottom: 50}}>Professional Work</Box>
+            <Box css={{ fontSize: '$8', fontWeight: 600, paddingBottom: 20}}>3D & Motion Graphics</Box>
+            {/* Row */}
+            <GridMosaic>
+            {/* Column */}
+                <ProjectCard imgSrc={blizzardgif} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Blizzard Entertainment" url="work/blizzard"/>
+
+                <ProjectCard imgSrc={hungerGamesMicrosoft01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Microsoft Hunger Games" url="work/blizzard"/>
+
+                <ProjectCard imgSrc={aliceInChains01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Alice In Chains" url="work/blizzard"/>
+
+                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Pawn Stars" url="work/blizzard"/>
+
+                <ProjectCard imgSrc={greenscreen} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Clockwork Princess" url="work/blizzard"/>
+
+                <ProjectCard imgSrc={swiiim01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="SWIIIM" url="work/blizzard"/>
+
+            </GridMosaic>
+
+
+            {/* Portfolio grid */}
+            <Box css={{ fontSize: '$8', fontWeight: 600, paddingBottom: 20, paddingTop: 100}}>Print and Graphic Design</Box>
             {/* Row */}
             <GridMosaic>
             {/* Column */}
 
-                <ProjectCard imgSrc={blizzardgif} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Blizzard Entertainment" url="work/blizzard"/>
-
                 <ProjectCard imgSrc={bellator01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Bellator MMA" url="work/blizzard"/>
 
-                <ProjectCard imgSrc={hungerGamesMicrosoft01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Microsoft Hunger Games" url="work/blizzard"/>
-
                 <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Nomad Greens" url="work/blizzard"/>
+
+                <ProjectCard imgSrc={milebot01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="CAAR app" url="work/blizzard"/>
+
+                <ProjectCard imgSrc={berbix} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Berbix Landing Redesign" url="work/blizzard"/>
 
             </GridMosaic>
 

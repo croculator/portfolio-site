@@ -75,6 +75,7 @@ const ProjectCard = ({ imgSrc, imgAlt, imgWidth, imgHeight, title, url}) => {
                     src={imgSrc}
                     alt={imgAlt}
                     objectFit='cover'
+                    quality='70'
                     width={imgWidth}
                     height={imgHeight}
                     />
