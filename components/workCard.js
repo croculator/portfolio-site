@@ -48,7 +48,7 @@ const WorkCard = ({ number, title, job, date, description}) => {
             <Box css={{fontFamily: 'inconsolata', fontSize: 27, marginBottom: -5, color: 'black'}}>{number}</Box>
       
             <Line as="hr"></Line>
-            <Box css={{ width: '250px', marginTop: 5, fontSize: 25, fontWeight: 400, backgroundColor: 'orange', fontFamily: 'inconsolata', textTransform: 'uppercase',  }}>{title}</Box>
+            <Box css={{ width: '250px', marginTop: 5, fontSize: 25, fontWeight: 400, backgroundColor: 'orange', fontFamily: 'inconsolata', }}>{title}</Box>
             <Box css={{fontSize: 16, fontWeight: '600',}}>{job}</Box>
             <Box css={{fontSize: 16, paddingBottom: 10,}}>{date}</Box>
             <Line as="hr"></Line>
