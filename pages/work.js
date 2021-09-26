@@ -4,6 +4,11 @@ import { styled } from '../stitches.config.ts';
 import Image from 'next/image'
 import Box from "../components/box";
 import ProjectCard from "../components/projectCard";
+import ArtWall from "../components/artWall";
+import WorkColumn from "../components/workColumn";
+import WorkCard from "../components/workCard";
+import LineBreak from "../components/lineBreak";
+
 import milebot01 from '../public/images/mileBotComp01.png'
 import berbix from '../public/images/berbix_comp03.png'
 import clockworkPrincess01 from '../public/images/clockworkPrincess01.gif'
@@ -43,20 +48,85 @@ const GridMosaic = styled('gridmosaic', {
   })
 
 
+const ArtDump = styled('artdump', {
+    display: "grid",
+    gap: "1rem",
+    gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
+    gridAutoRows: "400px",
+    columnGap: '0px',
+  })
+
+const CardImg = styled('div', {
+
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#353535',
+    width: '90vw',
+    overflow: 'hidden',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'noRepeat',
+    padding: 0,
+    margin: 0,
+    marginRight: '100px',
+
+});
+
+const CardWide = styled('div', {
+
+    display: 'flex',
+    gridColumn: 'span 2',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#353535',
+    height: '100%',
+    width: '100%',
+    overflow: 'hidden',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'noRepeat',
+    padding: 0,
+    margin: 0,
+
+});
+
+
+const CardLarge = styled('div', {
+
+    display: 'flex',
+    gridColumn: 'span 3',
+    gridRow: 'span 2',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#FAFAFA',
+    height: '100%',
+    width: '100%',
+    overflow: 'hidden',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'noRepeat',
+    padding: 0,
+    margin: 0,
+
+});
+
 const Work = () => {
     return (
         <>
             <Box css={{
-
-                maxWidth: 1440,
-                marginTop: 100,
-                // padding: 0,
-                // fontFamily: '$system',
-
-                '@bp1': { 
                     width: "100%",
-                    padding: 100,
-                    margin: "auto",
+                    padding: 0,
+                    marginLeft: 20,
+                    marginTop: 100,
+                    marginRight: 20,
+                '@bp1': { 
+                maxWidth: 1200,
+                    margin: 'auto',
+                    marginTop: 100,
                 },
             }}>
             <title >Work | Michael Diaz</title>
@@ -65,158 +135,96 @@ const Work = () => {
             <Box css={{  
                 fontFamily: '$inconsolata', 
                 maxWidth: "100%", 
-                height: "50vh",
-                paddingLeft: 30,
+                paddingBottom: 100,
                     '@bp1': { 
-                        maxWidth: "80%",
-                        paddingTop: "10vh"
+                        margin: 0,
+                        maxWidth: "100%",
+                        paddingTop: "5vh"
                     },
                 }}>
-                <Box as="div" css={{ fontSize: "$9", display: "inline-block",}}>Hi! </Box>
-                <Box as="mark" css={{  color: "orange", backgroundColor: "transparent", fontSize: "$9", display: "inline-block", paddingLeft: 10, paddingRight: 10}}> Michael Diaz  </Box>
-                <Box css={{ fontSize: "$9",display: "inline", }}>
-                 here,im a product designer, programmer, & visual artist. 
-                Lets build something delightful together!
+                <Box css={{ fontSize: "$8"  }}>Michael Diaz</Box>
+                <Box css={{ fontSize: "$5",width: '70%', marginBottom: 50}}>
+        Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
+motion design, 3D work in maya and C4D, user interfaces,  web design, and front end development. Michael studied 
+film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
                 </Box>
+                <Box css={{ fontFamily: '$system',fontSize: '10vw', fontWeight: 600, lineHeight: 0.85  }}>Selected</Box>
+                <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
             </Box>
 
-            {/* Github */}
-            <Box css={{
-                boxSizing: 'border-box',
-                justifyContent: 'center',
-                alignItems: 'center',
-                maxWidth: 600,
-                padding: 20,
-                margin: 'auto',
-                marginBottom: 100,
+
+
+            
+            <Box css={{ 
+                display: 'grid', 
+                gap: '1rem', 
+                gridTemplateColumns: 'repeat(auto-fit, minmax(375px, 1fr))',  
+                marginBottom: 140,
+
             }}>
-            <Box 
-                as="a" 
-                href="https://github.com/mike0x10"
-                css={{  borderRadius: 15, textDecoration: 'underline'}}
-                ><ArrowRightIcon/> Github</Box>
+                <WorkCard 
+                    number="001"
+                    title="Graphic Designer" 
+                    job="Nomad Greens" 
+                    date="Year 2020-2021"
+                    description="Designed imagery for produce packaging, created art for social media,
+                    photographed produce products for branding and marketing & built internal
+                    document design for meetings and internal use." 
+                />
+
+                <WorkCard 
+                    number="001"
+                    title="graphic designer" 
+                    job="Bellator MMA" 
+                    date="Year 2017-2018"
+                    description="created title cards, lower thirds & assorted graphics when the 
+                    commentators compare the 2 fighers together on TV, also created 
+                    in stadium promotion flyers, banners, and posters folllowing 
+                    Bellators Design Style Guides." 
+                />
+
+
+                <WorkCard 
+                    number="001"
+                    title="Graphic Designer" 
+                    job="Blizzard Entertainment" 
+                    date="Year 2015-2016"
+                    description="Developed 4 campaigns - pre-rendered cinematics 
+                    for in game cut- scenes and promotional content. 
+                    Built stylized 3D scenes from  hand drawn 2D art. 
+                    Also created motion graphic designs to supplement promotional content."
+                />
+
+
+                <WorkCard 
+                    number="001"
+                    title="Editor / Compositor" 
+                    job="Pawn Stars - History Channel" 
+                    date="Year 2014"
+                    description="Developed 4 campaigns - pre-rendered cinematics 
+                    for in game cut- scenes and promotional content. 
+                    Built stylized 3D scenes from  hand drawn 2D art. 
+                    Also created motion graphic designs to supplement promotional content."
+                />
+
+                
             </Box>
 
-            {/* Portfolio grid */}
-            <Box css={{ fontSize: '$8', fontWeight: 600, paddingBottom: 10, paddingLeft: 20}}>3D & Motion Graphics</Box>
-            <Box css={{ fontSize: '$6', fontWeight: 400, paddingBottom: 20, paddingLeft: 20, width: "100%", '@bp1': {width: "50%"}}}>
-                3D & Motion Graphics is defined by the act of creating assests either 2D stylized assets in illustrator or photoshop,
-                3D from maya or C4D, or photoreal assets from cameras.  Which after you take it into your motion compositing 
-                programing either After effects or Nuke.
-                </Box>
-
-            {/* Row */}
-            <GridMosaic>
-            {/* Column */}
-                <ProjectCard imgSrc={blizzardgif} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Blizzard Entertainment" position="3D Motion Artist II" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={hungerGamesMicrosoft01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Microsoft Hunger Games" position="Motion Graphics Artist" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={aliceInChains01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Alice In Chains" position="Post Production Supervisor" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Pawn Stars" position="Compositor" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={clockworkPrincess01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Clockwork Princess" position="Comp & dynamics artist" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={swiiim01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="SWIIIM" position="Comp & dynamics artist" url="work/blizzard"/>
-
-            </GridMosaic>
 
 
-            {/* Portfolio grid */}
-            <Box css={{ fontSize: '$8', fontWeight: 600, paddingBottom: 20, paddingTop: 100}}>Print and Graphic Design</Box>
-            {/* Row */}
-            <GridMosaic>
-            {/* Column */}
+                <LineBreak></LineBreak>
+                <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>02/</Box>
 
-                <ProjectCard imgSrc={bellator01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Bellator MMA" position="Graphic Designer" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={nomadGreensReport} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Nomad Greens" position="Graphic Designer" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={milebot01} imgAlt="bliz" imgWidth="600" imgHeight="600" title="CAAR app" position="Graphic Designer" url="work/blizzard"/>
-
-                <ProjectCard imgSrc={berbix} imgAlt="bliz" imgWidth="600" imgHeight="600" title="Berbix Landing Redesign" position="Graphic Designer" url="work/blizzard"/>
-
-            </GridMosaic>
-
-
-            {/* <Timeline/> */}
-
-
-            <Box css={{ padding: 30}}></Box>
-                {/* berfix */}
-
-                <Box css={{ fontSize: '$8', fontWeight: 600,}}>Berbix Landing Redesign</Box> 
-                <Box css={{fontSize: '$5', marginTop: '$3', fontWeight: 300, width: 500}}>
-                    Berbix is a Startup that is focusing on verifiying users for sensitive products for 
-                    other comapnies by providing an API to intergrate into their tech stack.
-
-
-                </Box>
-
-                <Box css={{ padding: 10}}></Box>
-                <Image 
-                src={berbix} 
-                alt="berbix"
-                loading='lazy'
-                />
-                <Box css={{ padding: 30}}></Box>
-
-                {/* Nomad Greens Quarterly Report */}
-
-                <Box css={{ fontSize: '$8', fontWeight: 600,}}>Nomad Greens Annual Report</Box> 
-                <Box css={{fontSize: '$5', marginTop: '$3', fontWeight: 300, width: 500}}>
-                    Nomad Greens is a tech startup focusing on growing the most nutritious food that is 
-                    affordable and can grow in any climate or enviroment.  
-                </Box>
-
-                <Image 
-                src={nomadGreensReport} 
-                alt="berbix"
-                loading='lazy'
-                />
+                <Box css={{ fontSize: '10vw', fontWeight: 600, lineHeight: 0.85, paddingTop: 70,}}>Selected</Box>
+                <Box css={{ fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Art_</Box>
                 
-                <Box css={{ display: 'table'}}>
-                    <Box css={{ float: 'left', width: '50%', padding: 10,}}>
-                        <Image 
-                        src={nomadGreensPhoto01} 
-                        alt="berbix"
-                        loading='lazy'
-                        />
-
-                    </Box>
-
-                    <Box css={{ float: 'left', width: '50%', padding: 10,}}>
-
-                    <Image 
-                    src={nomadGreensPhoto02} 
-                    alt="berbix"
-                    loading='lazy'
-                    />
-                    </Box>
-                    
-                </Box>
 
 
 
-                <Box css={{ padding: 10}}></Box>
-
-                {/* Milebot App Mock */}
-                <Image 
-                src={milebot01} 
-                alt="mobile comp"
-                loading='lazy'
-                />
-                <Box css={{ padding: 10}}></Box>
+        
 
 
-                <Image 
-                src={clockworkPrincess01} 
-                alt="mobile comp"
-                loading='lazy'
-                layout='responsive'
-                />
-                <Box css={{ padding: 10}}></Box>
+
             </Box>
             <Nav/>
             <Footer/>

@@ -11,7 +11,7 @@ const Layout = ({ pageTitle, children }) => {
             boxSizing: 'border-box',
             justifyContent: 'center',
             alignItems: 'center',
-            maxWidth: 650,
+            maxWidth: 1200,
             padding: 20,
             margin: 'auto',
             }}>

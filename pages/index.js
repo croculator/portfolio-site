@@ -40,6 +40,8 @@ const StyledFallback = styled(AvatarPrimitive.Fallback, {
   fontWeight: 500,
 });
 
+
+
 // Exports
 export const Avatar = StyledAvatar;
 export const AvatarImage = StyledImage;

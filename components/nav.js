@@ -47,8 +47,8 @@ const Nav = ({ }) => {
             </Box>
 
             <Box css={{ margin: 30, justifyContent: 'flex-end',}}>
-                <Link href="/"><NavElement>Home</NavElement></Link>
-                <Link href="/work"><NavElement>Work</NavElement></Link>
+                <Link href="/"><NavElement>/Home</NavElement></Link>
+                <Link href="/work"><NavElement>/Work</NavElement></Link>
                 {/* <NavElement> <ThemeToggle /></NavElement> */}
             </Box>
 
