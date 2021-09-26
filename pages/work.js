@@ -10,10 +10,12 @@ import WorkCard from "../components/workCard";
 import LineBreak from "../components/lineBreak";
 
 import milebot01 from '../public/images/mileBotComp01.png'
+import milebot01Framed from '../public/images/mileBotComp01_framed02.png'
 import berbix from '../public/images/berbix_comp03.png'
 import clockworkPrincess01 from '../public/images/clockworkPrincess01.gif'
 
 import nomadGreensReport from '../public/images/nomadGreens_report.png'
+import nomadGreensReport_framed from '../public/images/nomadGreens_report_framed.png'
 import nomadGreensPhoto01 from '../public/images/nomadGreens_photo01.jpg'
 import nomadGreensPhoto02 from '../public/images/nomadGreens_photo02.jpg'
 
@@ -114,6 +116,27 @@ const CardLarge = styled('div', {
 
 });
 
+
+const ButtonLink = styled('btnlink', {
+
+    backgroundColor: 'transparent',
+    borderRadius: '99999px',
+    borderColor: '$gray100',
+    border: '1px solid',
+    padding: 4,
+    marginRight: 10,
+    height: '25px',
+    paddingLeft: '15px',
+    paddingRight: '15px',
+
+    '&:hover': {
+
+        backgroundColor: 'orange',
+        cursor: 'pointer',
+    },
+    
+});
+
 const Work = () => {
     return (
         <>
@@ -142,12 +165,22 @@ const Work = () => {
                         paddingTop: "5vh"
                     },
                 }}>
-                <Box css={{ fontSize: "$8"  }}>Michael Diaz</Box>
-                <Box css={{ fontSize: "$5",width: '70%', marginBottom: 50}}>
-        Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
-motion design, 3D work in maya and C4D, user interfaces,  web design, and front end development. Michael studied 
-film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
+                <Box css={{ fontSize: "$8", fontFamily: '$system',  }}>Michael Diaz</Box>
+
+                <Box css={{marginTop: 10, marginBottom: 10,}}>
+                   <a href="https://www.github.com/mike0x10"> <ButtonLink>↖ Github</ButtonLink></a>
+                   <a href="https://www.linkedin.com/in/michael-diaz-03b93885/"> <ButtonLink>↖ Linkedin</ButtonLink></a>
                 </Box>
+
+
+                <Box css={{ fontSize: "$5",width: '70%', marginBottom: 50}}>
+                Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
+                motion design, UI Design, 3D work in maya and C4D, web design, and front end development. Michael studied 
+                film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
+                </Box>
+
+                <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>01/</Box>
+
                 <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Selected</Box>
                 <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
             </Box>
@@ -213,7 +246,11 @@ film post produciton at Los Angeles City. He is certified programmer by Harvards
 
                 <Box css={{ fontSize: '$8'  }}> Visual Design Work List</Box>
 
-                <WorkColumn title="Nomad Greens → Graphic Designer" year="2020"/>
+        
+                <WorkColumn title="Nomad Greens → Graphic Designer" year="2021"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="CAAR → UI App Designer" year="2020"/>
                 <LineBreak as="hr"css={{ }}/>
 
                 <WorkColumn title="Bellator MMA → Graphic Designer" year="2018"/>
@@ -274,15 +311,21 @@ film post produciton at Los Angeles City. He is certified programmer by Harvards
 
 
             <br/>
+                <Box css={{paddingTop: 150}}></Box>
                 <LineBreak></LineBreak>
                 <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>02/</Box>
 
-                <Box css={{ fontSize: '10vw', fontWeight: 600, lineHeight: 0.85, paddingTop: 70,}}>Selected</Box>
+                <Box css={{ fontSize: '10vw', fontWeight: 600, lineHeight: 0.85, paddingTop: 10,}}>Selected</Box>
                 <Box css={{ fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Art_</Box>
                 
+        
 
+                <Box css={{marginBottom: 100}}/>
 
-
+                <Image src={milebot01Framed} layout='responsive'/>
+                <br/>
+                <Image src={nomadGreensReport_framed} layout='responsive'/>
+                <br/>
         
 
 
