@@ -148,7 +148,7 @@ const Work = () => {
 motion design, 3D work in maya and C4D, user interfaces,  web design, and front end development. Michael studied 
 film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
                 </Box>
-                <Box css={{ fontFamily: '$system',fontSize: '10vw', fontWeight: 600, lineHeight: 0.85  }}>Selected</Box>
+                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Selected</Box>
                 <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
             </Box>
 
@@ -159,7 +159,7 @@ film post produciton at Los Angeles City. He is certified programmer by Harvards
                 display: 'grid', 
                 gap: '1rem', 
                 gridTemplateColumns: 'repeat(auto-fit, minmax(375px, 1fr))',  
-                marginBottom: 140,
+                marginBottom: 50,
 
             }}>
                 <WorkCard 
@@ -209,9 +209,71 @@ film post produciton at Los Angeles City. He is certified programmer by Harvards
 
                 
             </Box>
+        
+
+                <Box css={{ fontSize: '$8'  }}> Visual Design Work List</Box>
+
+                <WorkColumn title="Nomad Greens → Graphic Designer" year="2020"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Bellator MMA → Graphic Designer" year="2018"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Blizzard Entertainment → Motion Graphics" year="2016"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Microsoft Hunger games → Motion Graphics" year="2015"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Japan Internmanet Camp Documentary → Film Restoration" year="2015"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Pawn Stars → Editor / Compositor" year="2014"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Alice In Chains - Stone → Post Production Supervisor" year="2014"/>
+                <LineBreak as="hr"css={{ }}/>
+                
+                <WorkColumn title="Virgin Galatic / Tag Heuer → Effects Simulation" year="2014"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Buzkashi Boys → DCP Compressor" year="2014"/>
+                <LineBreak as="hr"css={{ }}/>
+        
+                <WorkColumn title="Angles Perch → Credits Editor" year="2014"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Boregore → Dynamics Simulation" year="2013"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="SWIIIM → Compositor " year="2013"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="The Delta Mirror → Compositor " year="2013"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="Clockwork Princess → 3D / Set Extension" year="2012"/>
+                <LineBreak as="hr"css={{ }}/>
 
 
+                <Box css={{ fontSize: '$8', marginTop: 50,  }}>Programming Work List</Box>
 
+                <WorkColumn title="This Website → Nextjs, React, Css" year="2021"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="CAAR → Native iOS App + UI / UX Design" year="2020"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <Box css={{ fontSize: '$8', marginTop: 50,  }}>Education</Box>
+
+                <WorkColumn title="Harvard CS50 → Algorithims, Data structures, Memory, Front-End" year="2016"/>
+                <LineBreak as="hr"css={{ }}/>
+
+                <WorkColumn title="LACC AA → Film Production Visual Design" year="2012"/>
+                <LineBreak as="hr"css={{ }}/>
+
+
+            <br/>
                 <LineBreak></LineBreak>
                 <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>02/</Box>
 
