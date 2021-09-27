@@ -84,7 +84,8 @@ export const {
       sans: "Inter, sans-serif",
       mono: "Fira Mono, monospace",
       inconsolata: "Inconsolata, monospace",
-      telegraf: "telegraf"
+      telegraf: "telegraf",
+      ibm: "IBMPlexMono",
     }
   },
   media: {

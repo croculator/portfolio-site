@@ -32,6 +32,7 @@ import hungerGamesMicrosoft01 from '../public/images/microsoft01.gif'
 import aliceInChains01 from '../public/images/aliceInChains01.gif'
 
 import swiiim01 from '../public/images/swiiim01.gif'
+import canooLanding from '../public/images/canooLanding01.png'
 
 
 import Link from "next/link";
@@ -140,6 +141,7 @@ const ButtonLink = styled('btnlink', {
 const Work = () => {
     return (
         <>
+        <Box css={{backgroundColor: '#F7F7F7',}}>
             <Box css={{
                     width: "100%",
                     padding: 0,
@@ -147,7 +149,7 @@ const Work = () => {
                     marginTop: 100,
                     marginRight: 20,
                 '@bp1': { 
-                maxWidth: 1200,
+                    maxWidth: 1200,
                     margin: 'auto',
                     marginTop: 100,
                 },
@@ -165,15 +167,17 @@ const Work = () => {
                         paddingTop: "5vh"
                     },
                 }}>
-                <Box css={{ fontSize: "$8", fontFamily: '$system',  }}>Michael Diaz</Box>
 
-                <Box css={{marginTop: 10, marginBottom: 10,}}>
+                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Michael</Box>
+                <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Diaz_</Box>
+
+                <Box css={{marginTop: 20, marginBottom: 10,}}>
                    <a href="https://www.github.com/mike0x10"> <ButtonLink>↖ Github</ButtonLink></a>
                    <a href="https://www.linkedin.com/in/michael-diaz-03b93885/"> <ButtonLink>↖ Linkedin</ButtonLink></a>
                 </Box>
 
 
-                <Box css={{ fontSize: "$5",width: '70%', marginBottom: 50}}>
+                <Box css={{ fontSize: "$5",width: '70%', marginBottom: 50, marginTop: 20, fontFamily: '$system'}}>
                 Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
                 motion design, UI Design, 3D work in maya and C4D, web design, and front end development. Michael studied 
                 film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
@@ -181,8 +185,8 @@ const Work = () => {
 
                 <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>01/</Box>
 
-                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Selected</Box>
-                <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
+                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '10vw', } }}>Selected</Box>
+                <Box css={{ fontFamily: '$system', fontSize: '6vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
             </Box>
 
 
@@ -244,6 +248,7 @@ const Work = () => {
             </Box>
         
 
+            <Box css={{}}>
                 <Box css={{ fontSize: '$8'  }}> Visual Design Work List</Box>
 
         
@@ -309,8 +314,9 @@ const Work = () => {
                 <WorkColumn title="LACC AA → Film Production Visual Design" year="2012"/>
                 <LineBreak as="hr"css={{ }}/>
 
+                </Box>
 
-            <br/>
+                <br/>
                 <Box css={{paddingTop: 150}}></Box>
                 <LineBreak></LineBreak>
                 <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>02/</Box>
@@ -322,9 +328,15 @@ const Work = () => {
 
                 <Box css={{marginBottom: 100}}/>
 
-                <Image src={milebot01Framed} layout='responsive'/>
+                <Image src={milebot01Framed} layout='responsive' quality="70"/>
                 <br/>
-                <Image src={nomadGreensReport_framed} layout='responsive'/>
+                <Image src={nomadGreensReport_framed} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={canooLanding} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={hungerGamesMicrosoft01} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={bellator01} layout='responsive' quality="70"/>
                 <br/>
         
 
@@ -333,6 +345,7 @@ const Work = () => {
             </Box>
             <Nav/>
             <Footer/>
+        </Box>
         </>
     )
 }
