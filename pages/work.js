@@ -199,7 +199,7 @@ const Work = () => {
                 marginBottom: 50,
 
             }}>
-                <WorkCard 
+        {/*         <WorkCard 
                     number="001"
                     title="Graphic Designer" 
                     job="Nomad Greens" 
@@ -220,6 +220,7 @@ const Work = () => {
                     Bellators Design Style Guides." 
                 />
 
+        */}
 
                 <WorkCard 
                     number="001"
@@ -232,6 +233,7 @@ const Work = () => {
                     Also created motion graphic designs to supplement promotional content."
                 />
 
+        {/*
 
                 <WorkCard 
                     number="001"
@@ -244,6 +246,7 @@ const Work = () => {
                     Also created motion graphic designs to supplement promotional content."
                 />
 
+            */}
                 
             </Box>
         
@@ -343,7 +346,7 @@ const Work = () => {
 
 
             </Box>
-            <Nav/>
+        
             <Footer/>
         </Box>
         </>
