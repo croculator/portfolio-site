@@ -19,18 +19,31 @@ const Blizzard = () => {
 
             <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 150,}}>
 
-                <Box css={{float: 'none', width: 'auto', marginTop: 40, '@bp2': { float: 'left', width: '33%'  }}}>
-                    <Box>Motion Graphics Artist ||</Box>
-                    <Box>2015-2016</Box>
+                <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '33%'  }}}>
+                    <Box css={{color: '$gray400', paddingBottom: 20,}}>
+                        <Box>Title</Box>
+                    </Box>
+                    <Box>
+                        <Box>Motion Graphics Artist ||</Box>
+                        <Box>2015-2016</Box>
+                    </Box>
                 </Box>
         
-                <Box css={{float: 'none', width: 'auto', marginTop: 40, '@bp2': { float: 'left', width: '33%'  }}}>
-                    <Box>Motion Graphics Artist ||</Box>
-                    <Box>2015-2016</Box>
+                <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '33%'  }}}>
+                    <Box css={{color: '$gray400', paddingBottom: 20,}}>
+                        <Box>Links</Box>
+                    </Box>
+                    <Box>
+                        <Box>Motion Graphics Artist ||</Box>
+                        <Box>2015-2016</Box>
+                    </Box>
                 </Box>
 
 
-                <Box css={{float: 'none', width: 'auto', marginTop: 40, '@bp2': { float: 'left', width: '33%'  }}}>
+                <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '33%'  }}}>
+                    <Box css={{color: '$gray400', paddingBottom: 20,}}>
+                        <Box>Description</Box>
+                    </Box>
                     <Box>I was working on the cinematics team 
                     building promotional media for hearthstone
                     and heros of the stone.  This media was

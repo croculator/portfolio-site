@@ -26,15 +26,21 @@ const Line = styled('line', {
 
 
 
-const WorkCard = ({ number, title, job, date, description}) => {
+const WorkCard = ({ number, title, job, date, description, url}) => {
   return (
     <>
+      <Link href="/work/blizzard">
         <Box css={{ 
             paddingRight: 0, 
             maxWidth: 375, 
             lineHeight: 1.15, 
             marginRight: 10,
             marginBottom: 50,
+
+            '&:hover': {
+
+                cursor: 'pointer',
+            },
 
            '@bp1': {
 
@@ -45,7 +51,7 @@ const WorkCard = ({ number, title, job, date, description}) => {
                 marginBottom: 80,
            }
         }}>
-            <Box css={{fontFamily: 'inconsolata', fontSize: 27, marginBottom: -5, color: 'black'}}>{number}</Box>
+            <Box css={{fontFamily: 'inconsolata', fontSize: 28, marginBottom: -5, color: 'black'}}>{number}</Box>
       
             <Line as="hr"></Line>
             <Box css={{ width: '250px', marginTop: 5, fontSize: 25, fontWeight: 400, backgroundColor: 'orange' }}>{title}</Box>
@@ -56,6 +62,7 @@ const WorkCard = ({ number, title, job, date, description}) => {
             <Line as="hr"></Line>
             <Box css={{ color: '$gray300'}}>{description}</Box>
         </Box>
+      </Link>
     </>
   );
 };

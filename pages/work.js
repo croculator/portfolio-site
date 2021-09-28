@@ -29,7 +29,10 @@ import bellator01 from '../public/images/bellator01.jpg'
 
 import hungerGamesMicrosoft01 from '../public/images/microsoft01.gif'
 
-import aliceInChains01 from '../public/images/aliceInChains01.gif'
+import aliceInChains00 from '../public/images/aliceInChains/aliceInChains00.gif'
+import aliceInChains01 from '../public/images/aliceInChains/aliceInChains01.png'
+import aliceInChains02 from '../public/images/aliceInChains/aliceInChains02.png'
+import aliceInChains03 from '../public/images/aliceInChains/aliceInChains03.png'
 
 import swiiim01 from '../public/images/swiiim01.gif'
 import canooLanding from '../public/images/canooLanding01.png'
@@ -146,12 +149,11 @@ const Work = () => {
                     width: "100%",
                     padding: 0,
                     marginLeft: 20,
-                    marginTop: 100,
                     marginRight: 20,
+                    paddingRight: 20,
                 '@bp1': { 
                     maxWidth: 1200,
                     margin: 'auto',
-                    marginTop: 100,
                 },
             }}>
             <title >Work | Michael Diaz</title>
@@ -197,6 +199,7 @@ const Work = () => {
                 gap: '1rem', 
                 gridTemplateColumns: 'repeat(auto-fit, minmax(375px, 1fr))',  
                 marginBottom: 50,
+                width: '100%',
 
             }}>
         {/*         <WorkCard 
@@ -340,6 +343,14 @@ const Work = () => {
                 <Image src={hungerGamesMicrosoft01} layout='responsive' quality="70"/>
                 <br/>
                 <Image src={bellator01} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={blizzardgif} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={aliceInChains01} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={aliceInChains02} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={aliceInChains03} layout='responsive' quality="70"/>
                 <br/>
         
 
