@@ -166,32 +166,33 @@ const Work = () => {
                     '@bp1': { 
                         margin: 0,
                         maxWidth: "100%",
-                        paddingTop: "5vh"
+                        paddingTop: "10vh",
+                        paddingBottom: "10vh"
                     },
                 }}>
 
                 <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Michael</Box>
                 <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Diaz_</Box>
 
-                <Box css={{marginTop: 20, marginBottom: 10,}}>
+                <Box css={{marginTop: '2vh', marginBottom: 10,}}>
                    <a href="https://www.github.com/mike0x10"> <ButtonLink>↖ Github</ButtonLink></a>
                    <a href="https://www.linkedin.com/in/michael-diaz-03b93885/"> <ButtonLink>↖ Linkedin</ButtonLink></a>
                 </Box>
 
 
-                <Box css={{ fontSize: "$5",width: '70%', marginBottom: 50, marginTop: 20, fontFamily: '$system'}}>
+                <Box css={{ fontSize: "$5",width: '70%', marginBottom: '3vh', marginTop: '2vh', fontFamily: '$system'}}>
                 Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
                 motion design, UI Design, 3D work in maya and C4D, web design, and front end development. Michael studied 
                 film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
                 </Box>
 
-                <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>01/</Box>
 
-                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '10vw', } }}>Selected</Box>
-                <Box css={{ fontFamily: '$system', fontSize: '6vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
             </Box>
 
 
+                <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>01/</Box>
+                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '10vw', } }}>Selected</Box>
+                <Box css={{ fontFamily: '$system', fontSize: '6vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
 
             
             <Box css={{ 
