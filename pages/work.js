@@ -37,6 +37,9 @@ import aliceInChains03 from '../public/images/aliceInChains/aliceInChains03.png'
 import swiiim01 from '../public/images/swiiim01.gif'
 import canooLanding from '../public/images/canooLanding01.png'
 
+import hyperloop01 from '../public/images/hyperloopPoster_frame01.png';
+import hyperloop02 from '../public/images/hyperloopPosterCollage.png';
+
 
 import Link from "next/link";
 import Nav from "../components/nav"
@@ -339,7 +342,7 @@ const Work = () => {
                 <br/>
                 <Image src={nomadGreensReport_framed} layout='responsive' quality="70"/>
                 <br/>
-                <Image src={canooLanding} layout='responsive' quality="70"/>
+                <Image src={hyperloop02} layout='responsive' quality="70"/>
                 <br/>
                 <Image src={hungerGamesMicrosoft01} layout='responsive' quality="70"/>
                 <br/>
@@ -352,6 +355,9 @@ const Work = () => {
                 <Image src={aliceInChains02} layout='responsive' quality="70"/>
                 <br/>
                 <Image src={aliceInChains03} layout='responsive' quality="70"/>
+                <br/>
+                <Image src={canooLanding} layout='responsive' quality="70"/>
+                <br/>
                 <br/>
         
 
