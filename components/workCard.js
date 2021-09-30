@@ -1,6 +1,7 @@
 import Box from "../components/box";
 import Link from "next/link";
 import { styled } from '../stitches.config.ts';
+import Image from 'next/image'
 
 const NavElement = styled('navelement', {
     borderRadius: '$round',
@@ -26,7 +27,7 @@ const Line = styled('line', {
 
 
 
-const WorkCard = ({ number, title, job, date, description, url}) => {
+const WorkCard = ({ number, title, job, date, description, url, img}) => {
   return (
     <>
       <Link href="/work/blizzard">
@@ -54,6 +55,7 @@ const WorkCard = ({ number, title, job, date, description, url}) => {
             <Box css={{fontFamily: 'inconsolata', fontSize: 28, marginBottom: -5, color: 'black'}}>{number}</Box>
       
             <Line as="hr"></Line>
+            <Image src={img}></Image>
             <Box css={{ width: '250px', marginTop: 5, fontSize: 25, fontWeight: 400, backgroundColor: 'orange' }}>{title}</Box>
             <Box css={{fontSize: 16, fontWeight: '600',}}>{job}</Box>
             <Box css={{fontSize: 16, paddingBottom: 10,}}>{date}</Box>

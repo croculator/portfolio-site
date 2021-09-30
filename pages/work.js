@@ -23,6 +23,7 @@ import blizzard01 from '../public/images/blizzard01.png'
 import blizzard02 from '../public/images/blizzard02.png'
 import blizzard03 from '../public/images/blizzard03.png'
 import blizzardgif from '../public/images/blizzard04.gif'
+import blizzardLogo from '../public/images/blizzardLogo.jpg'
 
 
 import bellator01 from '../public/images/bellator01.jpg'
@@ -55,6 +56,7 @@ const GridMosaic = styled('gridmosaic', {
     gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
     gridAutoRows: "auto",
   })
+
 
 
 const ArtDump = styled('artdump', {
@@ -170,7 +172,7 @@ const Work = () => {
                         margin: 0,
                         maxWidth: "100%",
                         paddingTop: "10vh",
-                        paddingBottom: "10vh"
+                        paddingBottom: "6vh"
                     },
                 }}>
 
@@ -181,13 +183,24 @@ const Work = () => {
                    <a href="https://www.github.com/mike0x10"> <ButtonLink>↖ Github</ButtonLink></a>
                    <a href="https://www.linkedin.com/in/michael-diaz-03b93885/"> <ButtonLink>↖ Linkedin</ButtonLink></a>
                 </Box>
+    
+            <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 10,}}>
 
-
-                <Box css={{ fontSize: "$5",width: '70%', marginBottom: '3vh', marginTop: '2vh', fontFamily: '$system'}}>
-                Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
-                motion design, UI Design, 3D work in maya and C4D, web design, and front end development. Michael studied 
-                film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
+                <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '50%'  }}}>
+                    <Box css={{color: '$gray400', paddingBottom: 10,}}>
+                        <Box>Info</Box>
+                    </Box>
+                    <Box>
+                        <Box css={{ fontSize: "$5",width: '100%', marginBottom: '3vh', marginTop: '1vh', fontFamily: '$system'}}>
+                        Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
+                        motion design, UI Design, 3D work in maya and C4D, web design, and front end development. Michael studied 
+                        film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
+                        </Box>
+                    </Box>
                 </Box>
+        </Box>
+
+
 
 
             </Box>
@@ -216,6 +229,7 @@ const Work = () => {
                     document design for meetings and internal use." 
                 />
 
+        */}
                 <WorkCard 
                     number="001"
                     title="graphic designer" 
@@ -225,12 +239,12 @@ const Work = () => {
                     commentators compare the 2 fighers together on TV, also created 
                     in stadium promotion flyers, banners, and posters folllowing 
                     Bellators Design Style Guides." 
+                    img={bellator01}
                 />
 
-        */}
 
                 <WorkCard 
-                    number="001"
+                    number="002"
                     title="Graphic Designer" 
                     job="Blizzard Entertainment" 
                     date="Year 2015-2016"
@@ -238,6 +252,7 @@ const Work = () => {
                     for in game cut- scenes and promotional content. 
                     Built stylized 3D scenes from  hand drawn 2D art. 
                     Also created motion graphic designs to supplement promotional content."
+                    img={blizzardLogo}
                 />
 
         {/*
