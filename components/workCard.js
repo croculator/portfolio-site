@@ -52,7 +52,7 @@ const WorkCard = ({ number, title, job, date, description, url, img}) => {
                 marginBottom: 80,
            }
         }}>
-            <Box css={{fontFamily: 'inconsolata', fontSize: 28, marginBottom: -5, color: 'black'}}>{number}</Box>
+            <Box css={{ fontSize: 28, marginBottom: -5, color: 'black'}}>{number}</Box>
       
             <Line as="hr"></Line>
             <Image src={img}></Image>

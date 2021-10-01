@@ -8,6 +8,7 @@ import ArtWall from "../components/artWall";
 import WorkColumn from "../components/workColumn";
 import WorkCard from "../components/workCard";
 import LineBreak from "../components/lineBreak";
+import ResumeList from "../components/resumeList";
 
 import milebot01 from '../public/images/mileBotComp01.png'
 import milebot01Framed from '../public/images/mileBotComp01_framed02.png'
@@ -165,19 +166,18 @@ const Work = () => {
 
             {/* Heading summary */}
             <Box css={{  
-                fontFamily: '$inconsolata', 
                 maxWidth: "100%", 
-                paddingBottom: 100,
+                paddingBottom: 0,
                     '@bp1': { 
                         margin: 0,
                         maxWidth: "100%",
-                        paddingTop: "10vh",
-                        paddingBottom: "6vh"
+                        paddingTop: "5vh",
+                        paddingBottom: "0vh"
                     },
                 }}>
 
                 <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Michael</Box>
-                <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Diaz_</Box>
+                <Box css={{ fontFamily: '$ibm', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Diaz_</Box>
 
                 <Box css={{marginTop: '2vh', marginBottom: 10,}}>
                    <a href="https://www.github.com/mike0x10"> <ButtonLink>↖ Github</ButtonLink></a>
@@ -187,11 +187,11 @@ const Work = () => {
             <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 10,}}>
 
                 <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '50%'  }}}>
-                    <Box css={{color: '$gray400', paddingBottom: 10,}}>
+                    <Box css={{color: '$gray400', paddingBottom: 5,}}>
                         <Box>Info</Box>
                     </Box>
                     <Box>
-                        <Box css={{ fontSize: "$5",width: '100%', marginBottom: '3vh', marginTop: '1vh', fontFamily: '$system'}}>
+                        <Box css={{ fontSize: "$5",width: '100%', marginBottom: '0vh', marginTop: '1vh', fontFamily: '$ibm'}}>
                         Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
                         motion design, UI Design, 3D work in maya and C4D, web design, and front end development. Michael studied 
                         film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
@@ -206,11 +206,13 @@ const Work = () => {
             </Box>
 
 
-                <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 10,}}>01/</Box>
+
+                <ResumeList/>
+            
+                <Box css={{  fontFamily: 'inconsolata', color: '$gray400', paddingTop: 100,}}>01/</Box>
                 <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '10vw', } }}>Selected</Box>
                 <Box css={{ fontFamily: '$system', fontSize: '6vw', fontWeight: 600, lineHeight: 0.85}}>Projects_</Box>
 
-            
             <Box css={{ 
                 display: 'grid', 
                 gap: '1rem', 
@@ -273,73 +275,7 @@ const Work = () => {
             </Box>
         
 
-            <Box css={{}}>
-                <Box css={{ fontSize: '$8'  }}> Visual Design Work List</Box>
 
-        
-                <WorkColumn title="Nomad Greens → Graphic Designer" year="2021"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="CAAR → UI App Designer" year="2020"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Bellator MMA → Graphic Designer" year="2018"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Blizzard Entertainment → Motion Graphics" year="2016"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Microsoft Hunger games → Motion Graphics" year="2015"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Japan Internmanet Camp Documentary → Film Restoration" year="2015"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Pawn Stars → Editor / Compositor" year="2014"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Alice In Chains - Stone → Post Production Supervisor" year="2014"/>
-                <LineBreak as="hr"css={{ }}/>
-                
-                <WorkColumn title="Virgin Galatic / Tag Heuer → Effects Simulation" year="2014"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Buzkashi Boys → DCP Compressor" year="2014"/>
-                <LineBreak as="hr"css={{ }}/>
-        
-                <WorkColumn title="Angles Perch → Credits Editor" year="2014"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Boregore → Dynamics Simulation" year="2013"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="SWIIIM → Compositor " year="2013"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="The Delta Mirror → Compositor " year="2013"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="Clockwork Princess → 3D / Set Extension" year="2012"/>
-                <LineBreak as="hr"css={{ }}/>
-
-
-                <Box css={{ fontSize: '$8', marginTop: 50,  }}>Programming Work List</Box>
-
-                <WorkColumn title="This Website → Nextjs, React, Css" year="2021"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="CAAR → Native iOS App + UI / UX Design" year="2020"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <Box css={{ fontSize: '$8', marginTop: 50,  }}>Education</Box>
-
-                <WorkColumn title="Harvard CS50 → Algorithims, Data structures, Memory, Front-End" year="2016"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                <WorkColumn title="LACC AA → Film Production Visual Design" year="2012"/>
-                <LineBreak as="hr"css={{ }}/>
-
-                </Box>
 
                 <br/>
                 <Box css={{paddingTop: 150}}></Box>
@@ -353,8 +289,32 @@ const Work = () => {
 
                 <Box css={{marginBottom: 100}}/>
 
+                <LineBreak></LineBreak>
                 <Image src={milebot01Framed} layout='responsive' quality="70"/>
-                <br/>
+
+                <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 50,}}>
+
+                    <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '33%'  }}}>
+                        <Box css={{color: '$gray400', paddingBottom: 20,}}>
+                            <Box>Title</Box>
+                        </Box>
+                        <Box>
+                            <Box>CAAR</Box>
+                        </Box>
+                    </Box>
+                    <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '33%'  }}}>
+                        <Box css={{color: '$gray400', paddingBottom: 20,}}>
+                            <Box>Summary</Box>
+                        </Box>
+                        <Box>
+                            <Box>iOS contact sheet showcasing the apps unique theme</Box>
+                        </Box>
+                    </Box>
+                </Box>
+
+
+
+                <LineBreak></LineBreak>
                 <Image src={nomadGreensReport_framed} layout='responsive' quality="70"/>
                 <br/>
                 <Image src={hyperloop02} layout='responsive' quality="70"/>

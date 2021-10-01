@@ -85,7 +85,7 @@ export const {
       mono: "Fira Mono, monospace",
       inconsolata: "Inconsolata, monospace",
       telegraf: "telegraf",
-      ibm: "IBMPlexMono",
+      ibm: "IBM Plex Mono",
     }
   },
   media: {
