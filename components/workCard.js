@@ -56,13 +56,19 @@ const WorkCard = ({ number, title, job, date, description, url, img}) => {
       
             <Line as="hr"></Line>
             <Image src={img}></Image>
-            <Box css={{ width: '250px', marginTop: 5, fontSize: 25, fontWeight: 400, backgroundColor: 'orange' }}>{title}</Box>
-            <Box css={{fontSize: 16, fontWeight: '600',}}>{job}</Box>
-            <Box css={{fontSize: 16, paddingBottom: 10,}}>{date}</Box>
-            <Line as="hr"></Line>
-            <Box css={{ textDecoration: 'underline', padding: 5}}>↳More Info</Box>
-            <Line as="hr"></Line>
-            <Box css={{ color: '$gray300'}}>{description}</Box>
+            <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 0,}}>
+
+                <Box css={{float: 'none', width: 'auto', marginTop: 0, marginBottom: 60, '@bp2': { float: 'left', width: '50%'  }}}>
+                    <Box css={{fontSize: 16, fontWeight: '600', fontSize: '$7'}}>{job}</Box>
+                    <Box css={{ width: '250px', marginTop: 5, fontSize: '$7', fontWeight: 400 }}>{title}</Box>
+                    <Box css={{fontSize: 16, paddingBottom: 10,}}>{date}</Box>
+                </Box> 
+                <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60, '@bp2': { float: 'left', width: '50%'  }}}>
+                    <Box css={{ textDecoration: 'underline', padding: 5}}>↳More Info</Box>
+                </Box> 
+            </Box>
+            <Box css={{ fontSize: '$6', fontFamily: 'sans-serif', color: '$gray100', paddingTop: 0}}>{description}</Box>
+
         </Box>
       </Link>
     </>

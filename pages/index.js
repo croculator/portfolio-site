@@ -74,9 +74,6 @@ export default function Home() {
 
       <PersonalLinks css={{ margin: 30}}/>
 
-
-
-
     </Layout>
     </>
   )

@@ -28,8 +28,16 @@ const WorkColumn = ({ num, title, year,}) => {
     </Box>
           */}
 
-    <Box css={{ gridColumnStart: 1, gridColumnEnd: '-1', display: 'grid', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center', marginTop: 20, marginBottom: 30, '@bp1': { marginTop: 5, marginBottom: 5, }}}>
-        <Box css={{overflow: 'hidden',}}>{num} {title}</Box>
+    <Box css={{ gridColumnStart: 1, gridColumnEnd: '-1', display: 'grid', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center', marginTop: 20, marginBottom: 30, '@bp1': { marginTop: 0, marginBottom: 0, }}}>
+        <Box css={{
+                backgroundImage:'linear-gradient(to right, rgba(255,255,255,0) 50%, #214eef 0%)', 
+                backgroundPosition: '-0%', 
+                backgroundSize: '200% auto', 
+                transition: 'all 150ms ease-out',
+                paddingTop: 3,
+                paddingBottom: 3,
+                '&:hover': { backgroundPosition: '-99%', color: 'white'}, 
+        }}>{num} {title}</Box>
         <Box css={{margin: 10, height: 1, background: '$gray500'}}></Box>
         <Box css={{   }}>{year}</Box>
     </Box>
