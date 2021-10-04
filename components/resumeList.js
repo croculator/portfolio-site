@@ -49,13 +49,15 @@ const ResumeList = ({ }) => {
 
         <Box css={{ fontFamily: 'sans-serif', fontSize: '$6', marginTop: 50  }}> Visual Design Work List</Box>
 
-        <WorkColumn num="15." title="Nomad Greens → Graphic Designer" year="2021"/>
+        <WorkColumn num="14." title="Nomad Greens → Graphic Designer" year="2021"/>
 
-        <WorkColumn num="14." title="CAAR → UI App Designer" year="2020"/>
+        <WorkColumn num="13." title="CAAR → UI App Designer" year="2020"/>
 
-        <WorkColumn num="13." title="Bellator MMA → Graphic Designer" year="2018"/>
+        <WorkColumn num="12." title="Bellator MMA → Graphic Designer" year="2018"/>
 
-        <WorkColumn num="12." title="Blizzard Entertainment → Motion Graphics" year="2016"/>
+        <WorkColumn num="11." title="Blizzard Entertainment → Motion Graphics" year="2016"/>
+
+        <WorkColumn num="10."title="Microsoft Surface - Hunger Games → Motion Graphics / Compositor" year="2014"/>
 
         <WorkColumn num="09."title="Pawn Stars → Editor / Compositor" year="2014"/>
 

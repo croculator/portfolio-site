@@ -188,8 +188,8 @@ const Work = ({ }) => {
         */}
                 <Box css={{marginTop: 100}}>.</Box>
                 <MobileWork/>
-                <MotionWork/>
                 <GraphicDesign/>
+                <MotionWork/>
                 
                 </WorkHeader>
             </Box>
