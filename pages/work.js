@@ -27,7 +27,6 @@ import blizzard03 from '../public/images/blizzard03.png'
 import blizzardgif from '../public/images/blizzard04.gif'
 import blizzardLogo from '../public/images/blizzardLogo.jpg'
 
-
 import bellator01 from '../public/images/bellator01.jpg'
 
 import hungerGamesMicrosoft01 from '../public/images/microsoft01.gif'
@@ -42,7 +41,6 @@ import canooLanding from '../public/images/canooLanding01.png'
 
 import hyperloop01 from '../public/images/hyperloopPoster_frame01.png';
 import hyperloop02 from '../public/images/hyperloopPosterCollage.png';
-
 
 import Link from "next/link";
 import Nav from "../components/nav"
@@ -154,6 +152,7 @@ const ButtonLink = styled('btnlink', {
 
 const MobileWork = dynamic (() => import("../components/mobileWork"));
 const MotionWork = dynamic (() => import("../components/motionWork"));
+const GraphicDesign = dynamic (() => import("../components/graphicDesign"));
 
 const Work = ({ }) => {
     const [mobileWork, setMobileWork] = useState(false);
@@ -190,6 +189,8 @@ const Work = ({ }) => {
                 <Box css={{marginTop: 100}}>.</Box>
                 <MobileWork/>
                 <MotionWork/>
+                <GraphicDesign/>
+                
                 </WorkHeader>
             </Box>
         </Box>
