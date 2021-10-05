@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from "../components/layout";
 import { styled } from '../stitches.config.ts';
+import * as AvatarPrimitive from '@radix-ui/react-avatar';
 import Image from 'next/image'
 import Box from "../components/box";
 import ProjectCard from "../components/projectCard";
@@ -42,12 +43,52 @@ import canooLanding from '../public/images/canooLanding01.png'
 import hyperloop01 from '../public/images/hyperloopPoster_frame01.png';
 import hyperloop02 from '../public/images/hyperloopPosterCollage.png';
 
+import faceshot from '../public/images/faceshot.jpg';
+
 
 import Link from "next/link";
 import Nav from "../components/nav"
 import Footer from "../components/footer";
 import Timeline from '../components/timeline';
 import { UnderlineIcon, ArrowRightIcon } from '@modulz/radix-icons';
+
+
+
+const StyledAvatar = styled(AvatarPrimitive.Root, {
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  verticalAlign: 'middle',
+  overflow: 'hidden',
+  userSelect: 'none',
+  width: 96,
+  height: 96,
+  borderRadius: '100%',
+});
+
+const StyledImage = styled(AvatarPrimitive.Image, {
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  borderRadius: 'inherit',
+});
+
+const StyledFallback = styled(AvatarPrimitive.Fallback, {
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundColor: 'white',
+  color: '$highlighter',
+  fontSize: 15,
+  lineHeight: 1,
+  fontWeight: 500,
+});
+
+export const Avatar = StyledAvatar;
+export const AvatarImage = StyledImage;
+export const AvatarFallback = StyledFallback;
 
 const NavElement = styled('navelement', {
   display: 'block',
@@ -107,10 +148,19 @@ const WorkHeader = ({ children }) => {
                 <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Michael</Box>
                 <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Diaz_</Box>
 
+
                 <Box css={{marginTop: '2vh', marginBottom: 10,}}>
                    <a href="https://www.github.com/mike0x10"> <ButtonLink>↖ Github</ButtonLink></a>
                    <a href="https://www.linkedin.com/in/michael-diaz-03b93885/"> <ButtonLink>↖ Linkedin</ButtonLink></a>
                 </Box>
+
+              <Avatar>
+                <AvatarImage
+                  src="https://media-exp1.licdn.com/dms/image/C5603AQE39fwf4sc7Qg/profile-displayphoto-shrink_400_400/0/1633393283786?e=1639008000&v=beta&t=V1uvLMLzAVOIN6p-wU2hIYgZmmMMhHNI3fliaiBH8Eg"
+                  alt="Michael Diaz"
+                />
+                <AvatarFallback delayMs={600}>MD</AvatarFallback>
+              </Avatar>
     
                 <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 10,}}>
 
