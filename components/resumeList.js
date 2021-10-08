@@ -55,7 +55,7 @@ const ResumeList = ({ }) => {
 
         <WorkColumn num="12." title="Bellator MMA → Graphic Designer" year="2018"/>
 
-        <WorkColumn num="11." title="Blizzard Entertainment → Motion Graphics" year="2016"/>
+        <WorkColumn num="11." title="Blizzard Entertainment → Motion Graphics ||" year="2016"/>
 
         <WorkColumn num="10."title="Microsoft Surface - Hunger Games → Motion Graphics / Compositor" year="2014"/>
 

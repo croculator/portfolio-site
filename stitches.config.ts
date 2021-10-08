@@ -27,8 +27,6 @@ export const {
       gray800: "#F5F5F5",
       gray900: "#FAFAFA",
 
-      hiContrast: "#ffffff",
-      loContrast: "#000000",
       table: "transparent",
       black: "#000000",
       white: "#ffffff",
@@ -118,26 +116,16 @@ export const {
       paddingTop: value,
       paddingBottom: value
     })
-  }
+  },
+
 });
 
-export const lightTheme = {
-  blur: "rgba(255, 255, 255, 0.5)",
-  border: "#E0E0E0",
-  gray100: "#F5F5F5",
-  gray200: "#EEEEEE",
-  gray300: "#E0E0E0",
-  gray400: "#BDBDBD",
-  gray50: "#FAFAFA",
-  gray500: "#9E9E9E",
-  gray600: "#757575",
-  gray700: "#616161",
-  gray800: "#424242",
-  gray900: "#212121",
-  hiContrast: "#000000",
-  loContrast: "#ffffff",
-  table: "#FCFCFC",
-};
+export const darkTheme = createTheme({
+  colors: {
+    hiContrast: "white",
+    loContrast: "black"
+  }
+});
 
 const media = {
   bp1: `(min-width: 520px)`,

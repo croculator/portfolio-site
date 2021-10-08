@@ -56,7 +56,7 @@ export default function Home() {
 
       <Avatar>
         <AvatarImage
-          src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?&w=128&h=128&dpr=2&q=80"
+          src="https://media-exp1.licdn.com/dms/image/C5603AQE39fwf4sc7Qg/profile-displayphoto-shrink_400_400/0/1633393283786?e=1639008000&v=beta&t=V1uvLMLzAVOIN6p-wU2hIYgZmmMMhHNI3fliaiBH8Eg"
           alt="Michael Diaz"
         />
         <AvatarFallback delayMs={600}>MD</AvatarFallback>

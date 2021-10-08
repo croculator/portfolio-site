@@ -145,7 +145,7 @@ const WorkHeader = ({ children }) => {
                     },
                 }}>
 
-                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '16vw', } }}>Michael</Box>
+                <Box css={{ fontFamily: '$system',fontSize: '20vw', fontWeight: 600, lineHeight: 0.85, '@bp1': {fontSize: '12vw', } }}>Michael</Box>
                 <Box css={{ fontFamily: '$system', fontSize: '10vw', fontWeight: 600, lineHeight: 0.85}}>Diaz_</Box>
 
 

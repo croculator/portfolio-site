@@ -13,6 +13,7 @@ import mileBotScheduleC from "../public/images/mobile/frameMileBot_scheduleC.png
 import nftArt01 from "../public/images/mobile/frame_nftArt01.png";
 import nftArt02 from "../public/images/mobile/frame_nftArt02.png";
 import milebot01Framed from '../public/images/mileBotComp01_framed02.png'
+import metaLink01 from '../public/images/mobile/frame_metaLinks01.png'
 //const MobileWork = dynamic (() => import("../components/mobileWork"));
 
 function MobileWork () {
@@ -37,6 +38,28 @@ function MobileWork () {
             }}>
 
             <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 150, textAlign: 'center',}}>
+
+                <Box css={{float: 'left', width: '100%', marginBottom: 60,}}>
+                    <Image src={milebot01Framed} layout='responsive' quality="70"/>
+                    <Box css={{color: '$gray400', paddingBottom: 10,}}>
+                        <Box>----</Box>
+                    </Box>
+                    <Box>
+                        <Box css={{width: '70%', textAlign: 'center', margin: 'auto'}}>Freelance tax app collage.</Box>
+                    </Box>
+                </Box>
+
+
+                <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60,'@bp1': { float: 'left', width: '50%', }, '@bp2': { float: 'left', width: '33%'  }}}>
+                    <Image src={metaLink01} layout='responsive' quality="70"/>
+                    <Box css={{color: '$gray400', paddingBottom: 10,}}>
+                        <Box>----</Box>
+                    </Box>
+                    <Box>
+                        <Box css={{width: '70%', textAlign: 'center', margin: 'auto'}}>Artist profile created as an extention of their EIN domain name.</Box>
+                    </Box>
+                </Box>
+
 
 
                 <Box css={{float: 'none', width: 'auto', marginTop: 40, marginBottom: 60,'@bp1': { float: 'left', width: '50%', }, '@bp2': { float: 'left', width: '33%'  }}}>
@@ -72,21 +95,13 @@ function MobileWork () {
                 </Box>
 
 
-                <Box css={{float: 'left', width: '100%', marginBottom: 60,}}>
-                    <Image src={milebot01Framed} layout='responsive' quality="70"/>
-                    <Box css={{color: '$gray400', paddingBottom: 10,}}>
-                        <Box>----</Box>
-                    </Box>
-                    <Box>
-                        <Box css={{width: '70%', textAlign: 'center', margin: 'auto'}}>Freelance tax app collage.</Box>
-                    </Box>
-                </Box>
+
 
 
 
 
             </Box>
-            </Box>
+        </Box>
     </>
     );
 };

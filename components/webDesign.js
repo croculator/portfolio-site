@@ -9,13 +9,8 @@ import ArrowTopRight from "../public/arrow-top-right.svg"
 import dynamic from "next/dynamic";
 import LineBreak from "../components/lineBreak";
 
-import mileBotScheduleC from "../public/images/mobile/frameMileBot_scheduleC.png";
-import nftArt01 from "../public/images/mobile/frame_nftArt01.png";
-import nftArt02 from "../public/images/mobile/frame_nftArt02.png";
-import milebot01Framed from '../public/images/mileBotComp01_framed02.png'
-import bellator01 from '../public/images/bellator01.jpg'
-import bellator02 from '../public/images/bellator02.jpg'
-import bellator03 from '../public/images/bellator03.jpg'
+
+import attentionEconomy from "../public/images/web/attentionEconomy_framed.png";
 //const MobileWork = dynamic (() => import("../components/mobileWork"));
 
 function GraphicDesign () {
@@ -24,7 +19,7 @@ function GraphicDesign () {
 
     <>
 
-        <Box css={{ fontSize: '10vw', fontWeight: 600, lineHeight: 0.85, paddingTop: 10,}}>Graphic</Box>
+        <Box css={{ fontSize: '10vw', fontWeight: 600, lineHeight: 0.85, paddingTop: 10,}}>Web</Box>
         <Box css={{ fontSize: '6vw', fontWeight: 600, lineHeight: 0.85}}>Design_</Box>
         <br/>
        <LineBreak/> 
@@ -43,17 +38,12 @@ function GraphicDesign () {
 
 
                 <Box css={{float: 'left', width: '100%', marginBottom: 60,}}>
-                    <Image src={bellator01} layout='responsive' quality="70"/>
-                    <br/>
-                    <Image src={bellator02} layout='responsive' quality="70"/>
-                    <br/>
-                    <Image src={bellator03} layout='responsive' quality="70"/>
-                    <br/>
+                    <Image src={attentionEconomy} layout='responsive' quality="70"/>
                     <Box css={{color: '$gray400', paddingBottom: 10,}}>
                         <Box>----</Box>
                     </Box>
                     <Box>
-                        <Box css={{width: '70%', textAlign: 'center', margin: 'auto'}}>Freelance tax app collage.</Box>
+                        <Box css={{width: '70%', textAlign: 'center', margin: 'auto'}}>Design Agency Landing Page.</Box>
                     </Box>
                 </Box>
 

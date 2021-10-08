@@ -154,6 +154,8 @@ const MobileWork = dynamic (() => import("../components/mobileWork"));
 const MotionWork = dynamic (() => import("../components/motionWork"));
 const GraphicDesign = dynamic (() => import("../components/graphicDesign"));
 
+const WebDesign= dynamic (() => import("../components/webDesign"));
+
 const Work = ({ }) => {
     const [mobileWork, setMobileWork] = useState(false);
     const [motionWork, setMotionWork] = useState(false);
@@ -170,7 +172,7 @@ const Work = ({ }) => {
                     marginRight: 20,
                     paddingRight: 20,
                 '@bp1': { 
-                    maxWidth: 1200,
+                    maxWidth: 1000,
                     margin: 'auto',
                 },
             }}>
@@ -187,9 +189,10 @@ const Work = ({ }) => {
                     <Box> {motionWork ? <MotionWork/> : null } </Box>
         */}
                 <Box css={{marginTop: 100}}>.</Box>
-                <MobileWork/>
                 <GraphicDesign/>
                 <MotionWork/>
+                <MobileWork/>
+                <WebDesign/>
                 
                 </WorkHeader>
             </Box>
