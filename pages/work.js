@@ -190,9 +190,9 @@ const Work = ({ }) => {
         */}
                 <Box css={{marginTop: 100}}>.</Box>
                 <GraphicDesign/>
+                <WebDesign/>
                 <MotionWork/>
                 <MobileWork/>
-                <WebDesign/>
                 
                 </WorkHeader>
             </Box>

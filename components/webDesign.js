@@ -11,7 +11,7 @@ import LineBreak from "../components/lineBreak";
 
 
 import attentionEconomy from "../public/images/web/attentionEconomy_framed.png";
-//const MobileWork = dynamic (() => import("../components/mobileWork"));
+import mileBotFrame from "../public/images/web/milebotFrame01.png"; //const MobileWork = dynamic (() => import("../components/mobileWork"));
 
 function GraphicDesign () {
 
@@ -35,6 +35,19 @@ function GraphicDesign () {
             }}>
 
             <Box css={{display: 'table', boxSizing: 'border-box', width: '100%', marginBottom: 150, textAlign: 'center',}}>
+
+
+                <Box css={{float: 'left', width: '100%', marginBottom: 60,}}>
+                    <Image src={mileBotFrame} layout='responsive' quality="70"/>
+                    <Box css={{color: '$gray400', paddingBottom: 10,}}>
+                        <Box>----</Box>
+                    </Box>
+                    <Box>
+                        <Box css={{width: '70%', textAlign: 'center', margin: 'auto'}}>Design Agency Landing Page.</Box>
+                    </Box>
+                </Box>
+
+
 
 
                 <Box css={{float: 'left', width: '100%', marginBottom: 60,}}>
