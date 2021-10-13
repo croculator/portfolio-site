@@ -11,7 +11,7 @@ import LineBreak from "../components/lineBreak";
 
 
 import attentionEconomy from "../public/images/web/attentionEconomy_framed.png";
-import mileBotFrame from "../public/images/web/milebotFrame01.png"; //const MobileWork = dynamic (() => import("../components/mobileWork"));
+import mileBotFrame from "../public/images/web/milebotFrame01copy.png"; 
 
 
 function GraphicDesign () {
