@@ -16,6 +16,7 @@ import milebot01Framed from '../public/images/mileBotComp01_framed02.png'
 import bellator01 from '../public/images/bellator01.jpg'
 import bellator02 from '../public/images/bellator02.jpg'
 import bellator03 from '../public/images/bellator03.jpg'
+import gradient01 from '../public/images/gradient01.jpg'
 //const MobileWork = dynamic (() => import("../components/mobileWork"));
 
 function GraphicDesign () {
@@ -48,6 +49,8 @@ function GraphicDesign () {
                     <Image src={bellator02} layout='responsive' quality="70"/>
                     <br/>
                     <Image src={bellator03} layout='responsive' quality="70"/>
+                    <br/>
+                    <Image src={gradient01} layout='responsive' quality="70"/>
                     <br/>
                     <Box css={{color: '$gray400', paddingBottom: 10,}}>
                         <Box>----</Box>
