@@ -17,6 +17,9 @@ import bellator01 from '../public/images/bellator01.jpg'
 import bellator02 from '../public/images/bellator02.jpg'
 import bellator03 from '../public/images/bellator03.jpg'
 import gradient01 from '../public/images/gradient01.jpg'
+import nomadGreensReport_framed from '../public/images/nomadGreens_report_framed.png'
+import hungerGames01 from '../public/images/hungerGames01.jpg'
+import hungerGames02 from '../public/images/hungerGames02.jpg'
 //const MobileWork = dynamic (() => import("../components/mobileWork"));
 
 function GraphicDesign () {
@@ -44,11 +47,19 @@ function GraphicDesign () {
 
 
                 <Box css={{float: 'left', width: '100%', marginBottom: 60,}}>
+                    <Image src={milebot01Framed} layout='responsive' quality="70"/>
+                    <br/>
+                    <Image src={hungerGames01} layout='responsive' quality="70"/>
+                    <br/>
+                    <Image src={hungerGames02} layout='responsive' quality="70"/>
+                    <br/>
                     <Image src={bellator01} layout='responsive' quality="70"/>
                     <br/>
                     <Image src={bellator02} layout='responsive' quality="70"/>
                     <br/>
                     <Image src={bellator03} layout='responsive' quality="70"/>
+                    <br/>
+                    <Image src={nomadGreensReport_framed} layout='responsive' quality="70"/>
                     <br/>
                     <Image src={gradient01} layout='responsive' quality="70"/>
                     <br/>
