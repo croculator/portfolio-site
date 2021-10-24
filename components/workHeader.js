@@ -170,7 +170,7 @@ const WorkHeader = ({ children }) => {
                         </Box>
                         <Box>
                             <Box css={{ fontSize: "$5",width: '100%', marginBottom: '0vh', marginTop: '1vh', fontFamily: '$ibm'}}>
-                            Michael Diaz is a visual artist and programmer located  in Los Angeles, CA specializing in graphic design, 
+                            Michael Diaz is a visual artist and programmer, specializing in graphic design, 
                             motion design, UI Design, 3D work in maya and C4D, web design, and front end development. Michael studied 
                             film post produciton at Los Angeles City. He is certified programmer by Harvards CS50.
                             </Box>
