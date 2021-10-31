@@ -141,7 +141,7 @@ const WorkHeader = ({ children }) => {
                         margin: 0,
                         maxWidth: "100%",
                         paddingTop: "5vh",
-                        paddingBottom: "0vh"
+                        paddingBottom: "2vh"
                     },
                 }}>
 
@@ -150,6 +150,7 @@ const WorkHeader = ({ children }) => {
 
 
                 <Box css={{marginTop: '2vh', marginBottom: 10,}}>
+                   <a href="https://vimeo.com/136158987"> <ButtonLink>↖ Video Demo Reel</ButtonLink></a>
                    <a href="https://www.github.com/mike0x10"> <ButtonLink>↖ Github</ButtonLink></a>
                    <a href="https://www.linkedin.com/in/michael-diaz-03b93885/"> <ButtonLink>↖ Linkedin</ButtonLink></a>
                 </Box>
@@ -177,6 +178,9 @@ const WorkHeader = ({ children }) => {
                         </Box>
                     </Box>
                 </Box>
+                
+                <iframe src="https://player.vimeo.com/video/136158987?h=029d52751f" width="100%" height="563" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
             </Box>
 
 
