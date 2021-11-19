@@ -20,6 +20,7 @@ import gradient01 from '../public/images/gradient01.jpg'
 import nomadGreensReport_framed from '../public/images/nomadGreens_report_framed.png'
 import hungerGames01 from '../public/images/hungerGames01.jpg'
 import hungerGames02 from '../public/images/hungerGames02.jpg'
+import revolut01 from '../public/images/revolut01.jpg'
 //const MobileWork = dynamic (() => import("../components/mobileWork"));
 
 function GraphicDesign () {
@@ -48,6 +49,8 @@ function GraphicDesign () {
 
                 <Box css={{float: 'left', width: '100%', marginBottom: 60,}}>
                     <Image src={milebot01Framed} layout='responsive' quality="70"/>
+                    <br/>
+                    <Image src={revolut01} layout='responsive' quality="70"/>
                     <br/>
                     <Image src={hungerGames01} layout='responsive' quality="70"/>
                     <br/>
